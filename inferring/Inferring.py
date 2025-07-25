@@ -5,10 +5,8 @@ import sys
 sys.path.append("../")
 sys.path.append("../utils")
 
-import utils.automats.MM.MealyMachine
 import utils.automats.DFA.DFA
 
-reload(utils.automats.MM.MealyMachine)
 reload(utils.automats.DFA.DFA)
 
 from utils.automats.DFA.DFA import DFA

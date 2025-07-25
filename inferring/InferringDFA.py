@@ -19,7 +19,7 @@ from utils.advice_systems.SRSconv import SRSconv
 from utils.advice_systems.SRSconv_with_common import SRSconv_with_common
 from utils.advice_systems.SRSreset import SRSreset
 from utils.advice_systems.SRSmark import SRSmark
-from utils.advice_systems.SRSpartial import SRSpartial
+
 from utils.advice_systems.SRSindemp import SRSindemp
 
 
@@ -48,10 +48,6 @@ class InferringDFA(Inferring):
                 )
             if target.type == DFA.MARKEDWORDS:
                 advice_system = SRSmark(alphabet=target.input_signs)
-            if target.type == DFA.PARTIAL:
-                advice_system = SRSpartial(
-                    alphabet=advice_system.input_signs, partial_dfa=advice_system
-                )
             if target.type == DFA.INDEMPOTENT:
                 advice_system = SRSindemp(letter="a")
 

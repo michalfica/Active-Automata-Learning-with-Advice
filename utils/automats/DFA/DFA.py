@@ -29,7 +29,7 @@ class DFA:
     EMPTY_STRING = ""
     NOT_RESETING_WORD = "-1"
     STATE_NOT_ACCESSIBLE = "-1"
-    PARTIAL = "partial"
+    # PARTIAL = "partial"
     INDEMPOTENT = "idempotent"
 
     def __init__(self, Q=0, input_signs=None, δ=None, F=None, type_=NOT_DEFINED):
@@ -669,22 +669,6 @@ class DFA:
         dfa_.type = DFA.MARKEDWORDS
 
         return dfa_
-
-    """
-    Deletes almost all edges from transition function besides a random k edges (k in [k1, k2])
-    """
-
-    def prune(self, k1=10, k2=10):
-        edges = []
-        for (q, a), _ in self.δ.items():
-            edges.append((q, a))
-
-        k = random.randint(k1, k2)
-        edges_to_delete = random.sample(population=edges, k=max(1, int(len(edges) - k)))
-        for e in edges_to_delete:
-            self.δ.pop(e, None)
-
-        self.pruned = True
 
     def create_coppy_with_start_sign(self):
         dfa_ = DFA(Q=self.Q + 2, input_signs=self.input_signs + ["α"])
