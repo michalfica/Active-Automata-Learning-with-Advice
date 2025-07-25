@@ -17,8 +17,6 @@ from utils.automats.DFA.DFA import DFA
 from utils.advice_systems.SRS import SRS
 from utils.advice_systems.SRSconv import SRSconv
 from utils.advice_systems.SRSconv_with_common import SRSconv_with_common
-from utils.advice_systems.SRSreset import SRSreset
-from utils.advice_systems.SRSmark import SRSmark
 
 from utils.advice_systems.SRSindemp import SRSindemp
 
@@ -42,12 +40,6 @@ class InferringDFA(Inferring):
                 advice_system = SRSconv(target.input_signs)
             if target.type == DFA.BITWISE_ADDITION:
                 advice_system = SRS(pi=[("4", "2"), ("5", "3")])
-            if target.type == DFA.SYNCHRONICITY:
-                advice_system = SRSreset(
-                    alphabet=target.input_signs, reset_words=[target.reset_word]
-                )
-            if target.type == DFA.MARKEDWORDS:
-                advice_system = SRSmark(alphabet=target.input_signs)
             if target.type == DFA.INDEMPOTENT:
                 advice_system = SRSindemp(letter="a")
 
