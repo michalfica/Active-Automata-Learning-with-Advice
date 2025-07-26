@@ -1,6 +1,5 @@
 import sys
 import copy
-import BitVector
 
 from importlib import reload
 
@@ -17,7 +16,6 @@ from utils.automats.DFA.DFA import DFA
 from utils.advice_systems.SRS import SRS
 from utils.advice_systems.SRSconv import SRSconv
 from utils.advice_systems.SRSconv_with_common import SRSconv_with_common
-
 from utils.advice_systems.SRSindemp import SRSindemp
 
 
@@ -83,14 +81,11 @@ class InferringDFA(Inferring):
         binary_rep_of_all_states = dict()
         for i, (_, s_binary) in enumerate(self.S):
             binary_rep_of_all_states[tuple(s_binary)] = i
-            # binary_rep_of_all_states[str(s_binary)] = i
 
         def _equivalent_in_S(t):
             t_bitlist = []
             for e in self.E:
                 t_bitlist.append(self.T[(t, e)])
-            # t_binary = BitVector.BitVector(bitlist=t_bitlist)
-            # return binary_rep_of_all_states[str(t_binary)]
 
             t_binary = t_bitlist
             return binary_rep_of_all_states[tuple(t_binary)]
@@ -103,7 +98,6 @@ class InferringDFA(Inferring):
                 conjecture.δ[(i, a)] = _equivalent_in_S(s + a)
             if self.T[(s, "")] == DFA.ACCEPT:
                 conjecture.F.add(i)
-        # return copy.deepcopy(conjecture)
         return conjecture
 
     def _create_conjecture(self):

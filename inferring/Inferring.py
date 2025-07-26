@@ -1,16 +1,3 @@
-from importlib import reload
-
-import sys
-
-sys.path.append("../")
-sys.path.append("../utils")
-
-import utils.automats.DFA.DFA
-
-reload(utils.automats.DFA.DFA)
-
-from utils.automats.DFA.DFA import DFA
-
 import copy
 
 
@@ -56,7 +43,7 @@ class Inferring:
     def _initialization(self):
         pass
 
-    def run(self, counterexamples=False, return_srs_size=False):
+    def run(self, counterexamples=False):
         self._initialization()
 
         iter_nuber = 0
@@ -65,8 +52,6 @@ class Inferring:
 
             # print(f"iter nr = {iter_nuber}")
 
-            if self.debug:
-                print(f"S = {len(self.S)}, E = {len(self.E)}")
             check, x, last_checked = self._closed(start_index=0)
             while check == False:
                 self._extend_S(x)
