@@ -10,14 +10,6 @@ Allows to:
 
 
 class RunLearnLib:
-    """
-    TO DO:
-        * czy dawać obsługiwać bardziej szczegółowo błędy?
-        * Czy to odpowiednia ścieżka do uruchomienia?
-    """
-
-    COMPILATION_ERR = "[ERROR] COMPILATION ERROR :"
-
     def __init__(self, debug=False):
         self.debug = debug
 
@@ -37,12 +29,6 @@ class RunLearnLib:
         c = "cd ../../../learnlib/examples ; mvn clean install"
         _ = self.__runCommand(c)
 
-        # output = proc.stdout
-        # if proc.returncode != 0:
-        #     compErr = output.find(self.COMPILATION_ERR)
-        #     if compErr != -1:
-        #         assert False, "Compilation error during 'mvn clean install'"
-
     def __getNumberofEQ(self, s):
         for l in s.splitlines():
             if l.startswith("Learning rounds"):
@@ -50,16 +36,28 @@ class RunLearnLib:
 
     def runLstar(self):
         c = 'cd ../../../learnlib/examples ; mvn exec:java -q -Dexec.mainClass="de.learnlib.example.LstarExample1"'
-        proc = self.__runCommand(c)  # ; cd ../../magisterka/test_algorithm/Lstar
-
+        proc = self.__runCommand(c)
         mq = "?"
         eq = self.__getNumberofEQ(proc.stdout)
         return [mq, eq]
 
     def runLstarWithAdvice(self):
         c = 'cd ../../../learnlib/examples ; mvn exec:java -q -Dexec.mainClass="de.learnlib.example.LstarExample_conv_cl_withAS"'
-        proc = self.__runCommand(c)  # ; cd ../../magisterka/test_algorithm/Lstar
+        proc = self.__runCommand(c)
+        mq = "?"
+        eq = self.__getNumberofEQ(proc.stdout)
+        return [mq, eq]
 
+    def runTTT(self):
+        c = 'cd ../../../learnlib/examples ; mvn exec:java -q -Dexec.mainClass="de.learnlib.example.TTTExample1"'
+        proc = self.__runCommand(c)
+        mq = "?"
+        eq = self.__getNumberofEQ(proc.stdout)
+        return [mq, eq]
+
+    def runTTTWithAdvice(self):
+        c = 'cd ../../../learnlib/examples ; mvn exec:java -q -Dexec.mainClass="de.learnlib.example.TTTExample1_withAS"'
+        proc = self.__runCommand(c)
         mq = "?"
         eq = self.__getNumberofEQ(proc.stdout)
         return [mq, eq]
