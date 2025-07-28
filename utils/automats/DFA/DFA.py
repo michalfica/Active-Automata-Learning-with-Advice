@@ -75,48 +75,6 @@ class DFA:
         self.print_transitions()
         print(f"Accepting states - {self.F}")
 
-    def dfa_from_dot_file(self, file_name):
-        f = open(file=file_name, mode="r")
-
-        number_of_states = 1
-        alphabet_size = 0
-
-        inputs_mapping = defaultdict(int)
-        for line in f:
-            line = line.strip()
-            elements = line.split(" ")
-            # print(f"ELEMENTS: {elements}\n\n")
-
-            if len(elements) == 1 and elements[0][0] == "s":
-                number_of_states += 1
-                # print(f"element = {elements}, ADDING NEW STATE")
-
-            if len(elements) >= 2 and elements[1] == "->":
-                q1 = int(elements[0][1:])
-                q2 = int(elements[2][1 : elements[2].find("[")])
-
-                label = elements[-1][elements[-1].find("tr><td>") + 1 : -3]
-
-                if label not in inputs_mapping:
-                    inputs_mapping[label] = alphabet_size
-                    alphabet_size += 1
-
-                self.δ[(q1, string.ascii_letters[inputs_mapping[label]])] = q2
-                # print(f"numerek literk: {inputs_mapping[label]}")
-                # print(f"{q1}, {string.ascii_letters[inputs_mapping[label]]} -> {q2}")
-
-        self.Q = number_of_states + 1  # adding śmietnik
-        self.input_signs = [a for a in string.ascii_letters[:alphabet_size]]
-
-        trash_can = number_of_states + 1
-        for a in self.input_signs:
-            self.δ[(trash_can, a)] = trash_can
-
-        for q in range(self.Q):
-            for a in self.input_signs:
-                if (q, a) not in self.δ:
-                    self.δ[(q, a)] = trash_can
-
     def print_java_format(self):
         result = (
             "Alphabet<Character> sigma = Alphabets.characters('a', '"
