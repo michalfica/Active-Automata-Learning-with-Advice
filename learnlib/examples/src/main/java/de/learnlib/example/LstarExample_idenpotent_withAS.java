@@ -116,7 +116,6 @@ public class LstarExample_idenpotent_withAS {
             // (inputs[idenpotent_letter], inputs[idenpotent_letter]inputs[idenpotent_letter]) \in Advice System  
             Integer q1 = hyp.getSuccessor(q, convertStringToWord(inputs.apply(target.idenpotent_letter).toString()));
             Integer q2 = hyp.getSuccessor(q, convertStringToWord(inputs.apply(target.idenpotent_letter).toString() + inputs.apply(target.idenpotent_letter).toString()));
-            // System.out.print("przesjac z " + q + "po literce " + inputs.apply(i).toString() + inputs.apply(j).toString() + " to  q1 =  " + q1 + " a po literce " + inputs.apply(j).toString() + inputs.apply(i).toString() + " to q2 = " + q2 +"\n");
             if( q1.intValue()!= q2.intValue() ){  // inconsistency with Advice System 
                 Word<Character> potentialCe1 = convertStringToWord(access_sequences.get(q)).append(inputs.apply(target.idenpotent_letter));
                 Word<Character> potentialCe2 = convertStringToWord(access_sequences.get(q)).append(inputs.apply(target.idenpotent_letter)).append(inputs.apply(target.idenpotent_letter));
@@ -124,10 +123,7 @@ public class LstarExample_idenpotent_withAS {
                 potentialCe1 = potentialCe1.concat(sep);
                 potentialCe2 = potentialCe2.concat(sep);
 
-                // System.out.print("potence1 : " + potentialCe1 + " potence2 : " + potentialCe2 +'\n');
                 Boolean status = target.dfa.computeOutput(potentialCe1);
-                // System.out.print(status + "\n");
-                // System.out.print(hyp.computeOutput(potentialCe1) + "\n");
 
                 if( status.booleanValue()!=hyp.computeOutput(potentialCe1).booleanValue()){
                     return new DefaultQuery<>(potentialCe1, status);
@@ -154,15 +150,12 @@ public class LstarExample_idenpotent_withAS {
             DFA<Integer, Character> hyp = (DFA<Integer, Character>) learningAlgorithm.getHypothesisModel();
 
             DefaultQuery<Character, Boolean> ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);
-            // System.out.println("ceFromConsistencyCheck = " + ceFromConsistencyCheck);
-            // Visualization.visualize(hyp, inputs);
+
             while( ceFromConsistencyCheck!=null ){
                 final boolean refined = learningAlgorithm.refineHypothesis(ceFromConsistencyCheck);
                 assert refined;
                 hyp = (DFA<Integer, Character>)  learningAlgorithm.getHypothesisModel();
-                ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);
-                // System.out.println("ceFromConsistencyCheck = " + ceFromConsistencyCheck);
-                // Visualization.visualize(hyp, inputs);
+                ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);;
             }
 
             DefaultQuery<Character, Boolean> ce = equivalenceAlgorithm.findCounterExample(hyp, inputs);
@@ -201,21 +194,12 @@ public class LstarExample_idenpotent_withAS {
         // CompactDFA<Character> target = constructSUL();
         Alphabet<Character> sigma = target.dfa.getInputAlphabet();
 
-        // HashMap<Integer,String> accsseq = computeAccessSequences(target.dfa, sigma);
-        // System.out.print(accsseq);
-
-        // Visualization.visualize(target.dfa, sigma);
-
         // construct a simulator membership query oracle
         DFAMembershipOracle<Character> sul = new DFASimulatorOracle<>(target.dfa);
         // oracle for counting queries wraps sul
         DFACounterOracle<Character> mqOracle = new DFACounterOracle<>(sul);
         // create cache oracle
         DFACacheOracle<Character> cacheOracle = DFACaches.createCache(new GrowingMapAlphabet<>(sigma), mqOracle); // DFACacheOracleWithAdviceSystem
-        // List<Integer> SRSparameters = new ArrayList<>();
-        // SRSparameters.add(target.idenpotent_letter);
-
-        // DFACacheOracleWithAdviceSystem<Character> cacheOracle = DFACaches.createCacheWithAdviceSystem(new GrowingMapAlphabet<>(sigma), mqOracle, "IDENPOTENT", SRSparameters);
         // create a learner
         ClassicLStarDFA<Character> learner = 
                 new ClassicLStarDFABuilder<Character>().withAlphabet(sigma)

@@ -83,12 +83,6 @@ public class TTTExample1 {
         // learning statistics
         System.out.println(experiment.getRounds().getSummary());
         System.out.println(mqOracle.getStatisticalData().getSummary());
-
-        // try (FileWriter expStatistic = new FileWriter(EXP_STATISTIC)) {
-        //     expStatistic.write(experiment.getRounds().getSummary()+"\n");
-        //     expStatistic.write(mqOracle.getStatisticalData().getSummary()+"\n");
-        //     expStatistic.write("duration: " + (float)duration/1000000000 + "\n");
-        // }
         System.out.println("-------------------------------------------------------");
     }
 

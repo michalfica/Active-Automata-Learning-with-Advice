@@ -118,10 +118,6 @@ public class TTTExample1_withAS {
         learningAlgorithm.startLearning();
 
         while (true) {
-            // System.out.print("Starting round: ");
-            // System.out.print(rounds.getCount());
-            // System.out.print("\n");
-
             TTTHypothesisDFA<Character> hyp = (TTTHypothesisDFA<Character>) learningAlgorithm.getHypothesisModel();
 
             DefaultQuery<Character, Boolean> ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);

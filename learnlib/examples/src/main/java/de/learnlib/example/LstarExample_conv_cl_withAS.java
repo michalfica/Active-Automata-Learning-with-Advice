@@ -105,7 +105,6 @@ public class LstarExample_conv_cl_withAS {
     }
 
     public static DefaultQuery<Character, Boolean> checkConsistencywithSRS(input_data target, DFA<Integer, Character> hyp, Alphabet<Character> inputs)throws IOException{
-        // System.out.println(hyp.getStates().getClass().getSimpleName());
         HashMap<Integer, String> access_sequences = computeAccessSequences(hyp, inputs);
         int inputs_size = inputs.size();
         for( int i=0; i<target.fst_cl; i++){
@@ -115,18 +114,14 @@ public class LstarExample_conv_cl_withAS {
                     // (inputs[i]inputs[j], inputs[j]inputs[i]) \in Advice System  
                     Integer q1 = hyp.getSuccessor(q, convertStringToWord(inputs.apply(i).toString() + inputs.apply(j).toString()));
                     Integer q2 = hyp.getSuccessor(q, convertStringToWord(inputs.apply(j).toString() + inputs.apply(i).toString()));
-                    // System.out.print("przesjac z " + q + "po literce " + inputs.apply(i).toString() + inputs.apply(j).toString() + " to  q1 =  " + q1 + " a po literce " + inputs.apply(j).toString() + inputs.apply(i).toString() + " to q2 = " + q2 +"\n");
+
                     if( q1.intValue()!= q2.intValue() ){  // inconsistency with Advice System 
                         Word<Character> potentialCe1 = convertStringToWord(access_sequences.get(q)).append(inputs.apply(i)).append(inputs.apply(j));
                         Word<Character> potentialCe2 = convertStringToWord(access_sequences.get(q)).append(inputs.apply(j)).append(inputs.apply(i));
                         Word<Character> sep = findDistinguishingWord(hyp, inputs, q1, q2);
                         potentialCe1 = potentialCe1.concat(sep);
                         potentialCe2 = potentialCe2.concat(sep);
-
-                        // System.out.print("potence1 : " + potentialCe1 + " potence2 : " + potentialCe2 +'\n');
                         Boolean status = target.dfa.computeOutput(potentialCe1);
-                        // System.out.print(status + "\n");
-                        // System.out.print(hyp.computeOutput(potentialCe1) + "\n");
 
                         if( status.booleanValue()!=hyp.computeOutput(potentialCe1).booleanValue()){
                             return new DefaultQuery<>(potentialCe1, status);
@@ -155,15 +150,11 @@ public class LstarExample_conv_cl_withAS {
             DFA<Integer, Character> hyp = (DFA<Integer, Character>) learningAlgorithm.getHypothesisModel();
 
             DefaultQuery<Character, Boolean> ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);
-            // System.out.println("ceFromConsistencyCheck = " + ceFromConsistencyCheck);
-            // Visualization.visualize(hyp, inputs);
             while( ceFromConsistencyCheck!=null ){
                 final boolean refined = learningAlgorithm.refineHypothesis(ceFromConsistencyCheck);
                 assert refined;
                 hyp = (DFA<Integer, Character>)  learningAlgorithm.getHypothesisModel();
                 ceFromConsistencyCheck = checkConsistencywithSRS(target, hyp, inputs);
-                // System.out.println("ceFromConsistencyCheck = " + ceFromConsistencyCheck);
-                // Visualization.visualize(hyp, inputs);
             }
 
             DefaultQuery<Character, Boolean> ce = equivalenceAlgorithm.findCounterExample(hyp, inputs);
@@ -203,11 +194,6 @@ public class LstarExample_conv_cl_withAS {
         input_data target = constructSUL();
         // CompactDFA<Character> target = constructSUL();
         Alphabet<Character> sigma = target.dfa.getInputAlphabet();
-
-        // HashMap<Integer,String> accsseq = computeAccessSequences(target.dfa, sigma);
-        // System.out.print(accsseq);
-
-        // Visualization.visualize(target, sigma);
 
         // construct a simulator membership query oracle
         DFAMembershipOracle<Character> sul = new DFASimulatorOracle<>(target.dfa);
