@@ -17,11 +17,11 @@ class Inferring:
         self.target = target
         self.advice_system = advice_system
         self.input_signs = self.target.input_signs
-        self.output_signs = self.target.output_signs
+        if hasattr(self.target, "output_signs"):
+            self.output_signs = self.target.output_signs
         self.equiv_query_fashion = equiv_query_fashion
         self.S_set = set()
         self.S = []
-
         """
             self.S - list of pairs, i-th element: (s_i, s_i_binary), where 
                     * s_i        is a string representing i-th state, 
@@ -223,6 +223,7 @@ class Inferring:
         self._extend_E(suffixes)
 
     def _check_consistenticy_with_pi(self, conjecture, advice_system):
+
         def get_distinction_word(q1, q2):
             for e in self.E:
                 q1e, q2e = conjecture.route_and_return_q(

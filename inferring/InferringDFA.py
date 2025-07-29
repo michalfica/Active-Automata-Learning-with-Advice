@@ -7,12 +7,12 @@ sys.path.append("../")
 sys.path.append("../utils/")
 sys.path.append("../utils/DFA")
 import inferring.Inferring
-import utils.automats.DFA
+import utils.automata.DFA
 
 reload(inferring.Inferring)
-reload(utils.automats.DFA)
+reload(utils.automata.DFA)
 from inferring.Inferring import Inferring
-from utils.automats.DFA.DFA import DFA
+from utils.automata.DFA.DFA import DFA
 from utils.advice_systems.SRS import SRS
 from utils.advice_systems.SRSconv import SRSconv
 from utils.advice_systems.SRSconv_with_common import SRSconv_with_common

@@ -13,6 +13,7 @@ class DFA:
     """
 
     NO_ANSWER = ""
+    ACCEPT = 1
 
     NOT_DEFINED, SIMPLE_DFA = "not_defined", "DFA"
     RANDOM_DFA = "randomDFA"
