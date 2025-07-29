@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.oracle.membership=_
+--add-reads
+de.learnlib.oracle.membership=ALL-UNNAMED

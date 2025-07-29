@@ -1,0 +1,12 @@
+de/learnlib/algorithm/kv/mealy/KearnsVaziraniMealy$KVAbstractCounterexample.class
+de/learnlib/algorithm/kv/StateInfo.class
+de/learnlib/algorithm/kv/dfa/KearnsVaziraniDFA.class
+module-info.class
+de/learnlib/algorithm/kv/dfa/KearnsVaziraniDFA$KVAbstractCounterexample.class
+de/learnlib/algorithm/kv/mealy/KearnsVaziraniMealy.class
+de/learnlib/algorithm/kv/mealy/KearnsVaziraniMealy$BuilderDefaults.class
+de/learnlib/algorithm/kv/dfa/KearnsVaziraniDFA$BuilderDefaults.class
+de/learnlib/algorithm/kv/dfa/KearnsVaziraniDFABuilder.class
+de/learnlib/algorithm/kv/dfa/KearnsVaziraniDFAState.class
+de/learnlib/algorithm/kv/mealy/KearnsVaziraniMealyBuilder.class
+de/learnlib/algorithm/kv/mealy/KearnsVaziraniMealyState.class

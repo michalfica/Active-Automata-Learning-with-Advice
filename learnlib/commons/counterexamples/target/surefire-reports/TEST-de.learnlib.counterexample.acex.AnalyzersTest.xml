@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="de.learnlib.counterexample.acex.AnalyzersTest" time="0.508" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples/target/test-classes:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/michal/Documents/edu/studia2/learnlib/commons/counterexamples/target/surefire 2025-05-04T15-11-41_109-jvmRun1 surefire-20250504151142438_1tmp surefire_0-20250504151142438_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples/target/test-classes:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/michal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.module.path" value="/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples/target/classes:/home/michal/Documents/edu/studia2/learnlib/api/target/learnlib-api-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/michal/.m2/repository/net/automatalib/automata-api/0.12.0/automata-api-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-settings/0.12.0/automata-commons-settings-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-smartcollections/0.12.0/automata-commons-smartcollections-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-util/0.12.0/automata-commons-util-0.12.0.jar:/home/michal/.m2/repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/michal/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples/target/test-classes:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-testng/3.5.2/surefire-testng-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.5.2/surefire-testng-utils-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.5.2/surefire-grouper-3.5.2.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.14+7-Ubuntu-122.04.1"/>
+    <property name="user.name" value="michal"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-57-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/michal/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="/home/michal/Documents/edu/studia2/learnlib/commons/counterexamples"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="17.0.14+7-Ubuntu-122.04.1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testOne0[BinarySearchFwd](1)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.008">
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testOne0[LinearFwd](2)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.0"/>
+  <testcase name="testOne0[ExponentialFwd](3)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.0"/>
+  <testcase name="testOne0[BinarySearchBwd](4)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testOne0[LinearBwd](5)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.0"/>
+  <testcase name="testOne0[ExponentialBwd](6)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.0"/>
+  <testcase name="testOne1[BinarySearchFwd](1)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.0"/>
+  <testcase name="testOne1[LinearFwd](2)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testOne1[ExponentialFwd](3)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testOne1[BinarySearchBwd](4)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testOne1[LinearBwd](5)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testOne1[ExponentialBwd](6)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testRandom[BinarySearchFwd](1)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.002"/>
+  <testcase name="testRandom[LinearFwd](2)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testRandom[ExponentialFwd](3)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testRandom[BinarySearchBwd](4)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testRandom[LinearBwd](5)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+  <testcase name="testRandom[ExponentialBwd](6)" classname="de.learnlib.counterexample.acex.AnalyzersTest" time="0.001"/>
+</testsuite>

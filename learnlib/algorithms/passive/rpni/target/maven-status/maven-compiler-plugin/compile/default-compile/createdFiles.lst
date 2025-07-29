@@ -1,0 +1,9 @@
+de/learnlib/algorithm/rpni/BlueFringeRPNIDFA.class
+de/learnlib/algorithm/rpni/BlueFringeEDSMDFA.class
+module-info.class
+de/learnlib/algorithm/rpni/BlueFringeRPNIMealy.class
+de/learnlib/algorithm/rpni/BlueFringeRPNIMoore.class
+de/learnlib/algorithm/rpni/EDSMUtil.class
+de/learnlib/algorithm/rpni/MDLUtil.class
+de/learnlib/algorithm/rpni/BlueFringeMDLDFA.class
+de/learnlib/algorithm/rpni/AbstractBlueFringeRPNI.class

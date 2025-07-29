@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.driver=_
+--add-reads
+de.learnlib.driver=ALL-UNNAMED

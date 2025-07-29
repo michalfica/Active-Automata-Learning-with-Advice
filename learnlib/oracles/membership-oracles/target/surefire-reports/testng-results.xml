@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T15:11:53 CEST" name="Surefire suite" finished-at="2025-05-04T15:11:54 CEST" duration-ms="1258">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T15:11:53 CEST" name="Surefire test" finished-at="2025-05-04T15:11:54 CEST" duration-ms="1258">
+      <class name="de.learnlib.oracle.membership.SULAdaptiveOracleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.oracle.membership.SULAdaptiveOracleTest@7e7be63f]" started-at="2025-05-04T15:11:53 CEST" name="setUp" finished-at="2025-05-04T15:11:53 CEST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNoopIdempotency()[pri:0, instance:de.learnlib.oracle.membership.SULAdaptiveOracleTest@7e7be63f]" started-at="2025-05-04T15:11:53 CEST" name="testNoopIdempotency" finished-at="2025-05-04T15:11:54 CEST" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoopIdempotency -->
+        <test-method signature="testQueries()[pri:0, instance:de.learnlib.oracle.membership.SULAdaptiveOracleTest@7e7be63f]" started-at="2025-05-04T15:11:54 CEST" name="testQueries" finished-at="2025-05-04T15:11:54 CEST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQueries -->
+      </class> <!-- de.learnlib.oracle.membership.SULAdaptiveOracleTest -->
+      <class name="de.learnlib.oracle.membership.SimulatorOracleTest">
+        <test-method signature="testDFASimulatorOracle()[pri:0, instance:de.learnlib.oracle.membership.SimulatorOracleTest@58695725]" started-at="2025-05-04T15:11:54 CEST" name="testDFASimulatorOracle" finished-at="2025-05-04T15:11:54 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDFASimulatorOracle -->
+      </class> <!-- de.learnlib.oracle.membership.SimulatorOracleTest -->
+      <class name="de.learnlib.oracle.membership.SULOmegaOracleTest">
+        <test-method signature="testDeepCopyMealySimulatorOmegaOracle()[pri:0, instance:de.learnlib.oracle.membership.SULOmegaOracleTest@1af2d44a]" started-at="2025-05-04T15:11:54 CEST" name="testDeepCopyMealySimulatorOmegaOracle" finished-at="2025-05-04T15:11:54 CEST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeepCopyMealySimulatorOmegaOracle -->
+        <test-method signature="testForkableMealySimulatorOmegaOracle()[pri:0, instance:de.learnlib.oracle.membership.SULOmegaOracleTest@1af2d44a]" started-at="2025-05-04T15:11:54 CEST" name="testForkableMealySimulatorOmegaOracle" finished-at="2025-05-04T15:11:54 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForkableMealySimulatorOmegaOracle -->
+        <test-method signature="testOmegaOracleValidation()[pri:0, instance:de.learnlib.oracle.membership.SULOmegaOracleTest@1af2d44a]" started-at="2025-05-04T15:11:54 CEST" name="testOmegaOracleValidation" finished-at="2025-05-04T15:11:54 CEST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOmegaOracleValidation -->
+      </class> <!-- de.learnlib.oracle.membership.SULOmegaOracleTest -->
+      <class name="de.learnlib.oracle.membership.SimulatorOmegaOracleTest">
+        <test-method signature="testDFASimulatorOmegaOracle()[pri:0, instance:de.learnlib.oracle.membership.SimulatorOmegaOracleTest@18d87d80]" started-at="2025-05-04T15:11:54 CEST" name="testDFASimulatorOmegaOracle" finished-at="2025-05-04T15:11:54 CEST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDFASimulatorOmegaOracle -->
+      </class> <!-- de.learnlib.oracle.membership.SimulatorOmegaOracleTest -->
+      <class name="de.learnlib.oracle.membership.StateLocalInputSULAdaptiveOracleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.oracle.membership.StateLocalInputSULAdaptiveOracleTest@618425b5]" started-at="2025-05-04T15:11:54 CEST" name="setUp" finished-at="2025-05-04T15:11:54 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNoopIdempotency()[pri:0, instance:de.learnlib.oracle.membership.StateLocalInputSULAdaptiveOracleTest@618425b5]" started-at="2025-05-04T15:11:54 CEST" name="testNoopIdempotency" finished-at="2025-05-04T15:11:54 CEST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoopIdempotency -->
+        <test-method signature="testQueriesAndCleanUp()[pri:0, instance:de.learnlib.oracle.membership.StateLocalInputSULAdaptiveOracleTest@618425b5]" started-at="2025-05-04T15:11:54 CEST" name="testQueriesAndCleanUp" finished-at="2025-05-04T15:11:54 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQueriesAndCleanUp -->
+      </class> <!-- de.learnlib.oracle.membership.StateLocalInputSULAdaptiveOracleTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

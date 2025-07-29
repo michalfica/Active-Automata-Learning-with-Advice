@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T15:12:35 CEST" name="Surefire suite" finished-at="2025-05-04T15:12:35 CEST" duration-ms="479">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T15:12:35 CEST" name="Surefire test" finished-at="2025-05-04T15:12:35 CEST" duration-ms="479">
+      <class name="de.learnlib.algorithm.lsharp.ads.ADSTreeTest">
+        <test-method signature="adsRegression()[pri:0, instance:de.learnlib.algorithm.lsharp.ads.ADSTreeTest@156b88f5]" started-at="2025-05-04T15:12:35 CEST" name="adsRegression" finished-at="2025-05-04T15:12:35 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adsRegression -->
+      </class> <!-- de.learnlib.algorithm.lsharp.ads.ADSTreeTest -->
+      <class name="de.learnlib.algorithm.lsharp.LSharpMealyTest">
+        <test-method signature="testIssue145()[pri:0, instance:de.learnlib.algorithm.lsharp.LSharpMealyTest@483f6d77]" started-at="2025-05-04T15:12:35 CEST" name="testIssue145" finished-at="2025-05-04T15:12:35 CEST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIssue145 -->
+      </class> <!-- de.learnlib.algorithm.lsharp.LSharpMealyTest -->
+      <class name="de.learnlib.algorithm.lsharp.NormalObservationTreeTest">
+        <test-method signature="accessSeqMantained()[pri:0, instance:de.learnlib.algorithm.lsharp.NormalObservationTreeTest@3fb1549b]" started-at="2025-05-04T15:12:35 CEST" name="accessSeqMantained" finished-at="2025-05-04T15:12:35 CEST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessSeqMantained -->
+        <test-method signature="xferSeqMantained()[pri:0, instance:de.learnlib.algorithm.lsharp.NormalObservationTreeTest@3fb1549b]" started-at="2025-05-04T15:12:35 CEST" name="xferSeqMantained" finished-at="2025-05-04T15:12:35 CEST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xferSeqMantained -->
+      </class> <!-- de.learnlib.algorithm.lsharp.NormalObservationTreeTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

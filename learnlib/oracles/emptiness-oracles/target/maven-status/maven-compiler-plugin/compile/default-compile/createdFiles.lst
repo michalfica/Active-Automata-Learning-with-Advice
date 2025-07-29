@@ -1,0 +1,7 @@
+de/learnlib/oracle/emptiness/DFALassoEmptinessOracleImpl.class
+de/learnlib/oracle/emptiness/MealyLassoEmptinessOracleImpl.class
+de/learnlib/oracle/emptiness/DFABFEmptinessOracle.class
+module-info.class
+de/learnlib/oracle/emptiness/AbstractBFEmptinessOracle.class
+de/learnlib/oracle/emptiness/MealyBFEmptinessOracle.class
+de/learnlib/oracle/emptiness/LassoEmptinessOracleImpl.class

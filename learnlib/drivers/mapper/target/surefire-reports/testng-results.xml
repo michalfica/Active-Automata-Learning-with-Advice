@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T15:12:44 CEST" name="Surefire suite" finished-at="2025-05-04T15:12:44 CEST" duration-ms="63">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T15:12:44 CEST" name="Surefire test" finished-at="2025-05-04T15:12:44 CEST" duration-ms="63">
+      <class name="de.learnlib.mapper.MappedSULTest">
+        <test-method signature="testMapperWithException()[pri:0, instance:de.learnlib.mapper.MappedSULTest@29e495ff]" started-at="2025-05-04T15:12:44 CEST" name="testMapperWithException" finished-at="2025-05-04T15:12:44 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMapperWithException -->
+        <test-method signature="testMapperWithMappedExceptions()[pri:0, instance:de.learnlib.mapper.MappedSULTest@29e495ff]" started-at="2025-05-04T15:12:44 CEST" name="testMapperWithMappedExceptions" finished-at="2025-05-04T15:12:44 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMapperWithMappedExceptions -->
+      </class> <!-- de.learnlib.mapper.MappedSULTest -->
+      <class name="de.learnlib.mapper.MapperCompositionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.mapper.MapperCompositionTest@72cde7cc]" started-at="2025-05-04T15:12:44 CEST" name="setUp" finished-at="2025-05-04T15:12:44 CEST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testComposition()[pri:0, instance:de.learnlib.mapper.MapperCompositionTest@72cde7cc]" started-at="2025-05-04T15:12:44 CEST" name="testComposition" finished-at="2025-05-04T15:12:44 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComposition -->
+      </class> <!-- de.learnlib.mapper.MapperCompositionTest -->
+      <class name="de.learnlib.mapper.SULMapperCompositionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.mapper.SULMapperCompositionTest@2f8dad04]" started-at="2025-05-04T15:12:44 CEST" name="setUp" finished-at="2025-05-04T15:12:44 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testComposition()[pri:0, instance:de.learnlib.mapper.SULMapperCompositionTest@2f8dad04]" started-at="2025-05-04T15:12:44 CEST" name="testComposition" finished-at="2025-05-04T15:12:44 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComposition -->
+      </class> <!-- de.learnlib.mapper.SULMapperCompositionTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

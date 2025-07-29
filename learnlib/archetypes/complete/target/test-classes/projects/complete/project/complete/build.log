@@ -1,0 +1,33 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< archetype.it:complete >------------------------
+[INFO] Building complete 0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ complete ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ complete ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ complete ---
+[INFO] skip non existing resourceDirectory /home/michal/Documents/edu/studia2/learnlib/archetypes/complete/target/test-classes/projects/complete/project/complete/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ complete ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ complete ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ complete ---
+[INFO] Building jar: /home/michal/Documents/edu/studia2/learnlib/archetypes/complete/target/test-classes/projects/complete/project/complete/target/complete-0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.209 s
+[INFO] Finished at: 2025-05-04T15:12:57+02:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.mapper=_
+--add-reads
+de.learnlib.mapper=ALL-UNNAMED

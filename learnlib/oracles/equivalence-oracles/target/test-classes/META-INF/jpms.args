@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.oracle.equivalence=_
+--add-reads
+de.learnlib.oracle.equivalence=ALL-UNNAMED

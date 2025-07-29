@@ -1,0 +1,5 @@
+de/learnlib/algorithm/adt/it/ADTIT.class
+de/learnlib/algorithm/adt/learner/ADTVisualizationTest.class
+de/learnlib/algorithm/adt/learner/ADTGrowingAlphabetTest.class
+de/learnlib/algorithm/adt/learner/ADTResumableLearnerTest.class
+de/learnlib/algorithm/adt/automaton/ADTHypothesisTest.class

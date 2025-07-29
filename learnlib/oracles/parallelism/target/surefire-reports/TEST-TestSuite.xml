@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="2.581" tests="181" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism/target/test-classes:/home/michal/Documents/edu/studia2/learnlib/drivers/simulator/target/learnlib-drivers-simulator-0.19.0-SNAPSHOT.jar:/home/michal/Documents/edu/studia2/learnlib/filters/statistics/target/learnlib-statistics-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/net/automatalib/automata-core/0.12.0/automata-core-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-util/0.12.0/automata-util-0.12.0.jar:/home/michal/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy/1.15.4/byte-buddy-1.15.4.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.4/byte-buddy-agent-1.15.4.jar:/home/michal/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/michal/Documents/edu/studia2/learnlib/oracles/parallelism/target/surefire 2025-05-04T15-11-41_109-jvmRun1 surefire-20250504151221344_61tmp surefire_15-20250504151221344_62tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism/target/test-classes:/home/michal/Documents/edu/studia2/learnlib/drivers/simulator/target/learnlib-drivers-simulator-0.19.0-SNAPSHOT.jar:/home/michal/Documents/edu/studia2/learnlib/filters/statistics/target/learnlib-statistics-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/net/automatalib/automata-core/0.12.0/automata-core-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-util/0.12.0/automata-util-0.12.0.jar:/home/michal/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy/1.15.4/byte-buddy-1.15.4.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.4/byte-buddy-agent-1.15.4.jar:/home/michal/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/michal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.module.path" value="/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism/target/classes:/home/michal/Documents/edu/studia2/learnlib/api/target/learnlib-api-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/michal/Documents/edu/studia2/learnlib/oracles/membership-oracles/target/learnlib-membership-oracles-0.19.0-SNAPSHOT.jar:/home/michal/Documents/edu/studia2/learnlib/commons/settings/target/learnlib-settings-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-settings/0.12.0/automata-commons-settings-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-api/0.12.0/automata-api-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-smartcollections/0.12.0/automata-commons-smartcollections-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-commons-util/0.12.0/automata-commons-util-0.12.0.jar:/home/michal/.m2/repository/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/michal/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism/target/test-classes:/home/michal/Documents/edu/studia2/learnlib/drivers/simulator/target/learnlib-drivers-simulator-0.19.0-SNAPSHOT.jar:/home/michal/Documents/edu/studia2/learnlib/filters/statistics/target/learnlib-statistics-0.19.0-SNAPSHOT.jar:/home/michal/.m2/repository/net/automatalib/automata-core/0.12.0/automata-core-0.12.0.jar:/home/michal/.m2/repository/net/automatalib/automata-util/0.12.0/automata-util-0.12.0.jar:/home/michal/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy/1.15.4/byte-buddy-1.15.4.jar:/home/michal/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.4/byte-buddy-agent-1.15.4.jar:/home/michal/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/michal/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/michal/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/michal/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-testng/3.5.2/surefire-testng-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.5.2/surefire-testng-utils-3.5.2.jar:/home/michal/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.5.2/surefire-grouper-3.5.2.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.14+7-Ubuntu-122.04.1"/>
+    <property name="user.name" value="michal"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-57-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/michal/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="/home/michal/Documents/edu/studia2/learnlib/oracles/parallelism"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="17.0.14+7-Ubuntu-122.04.1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.025">
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.003"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.002"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSLISULTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.002"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSULTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.003"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.003"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.007"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.004"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.002"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.001"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSupplierTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testSingleMethods" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testThreadCreation[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.005"/>
+  <testcase name="testThreadCreation[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testThreadScheduling[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testThreadScheduling[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.009"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.006"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.002"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.004"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testDefaults" classname="de.learnlib.oracle.parallelism.SettingsTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.001"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelSupplierTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.0"/>
+  <testcase name="testThreadCreation[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.003"/>
+  <testcase name="testThreadCreation[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.002"/>
+  <testcase name="testThreadScheduling[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testThreadScheduling[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveOracleTest" time="0.001"/>
+  <testcase name="testEmptyInputs" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleBuilderTest" time="0.001"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.002"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.0"/>
+  <testcase name="testCustomExecutorTooManyThreads" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testThreadCreation[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.003"/>
+  <testcase name="testThreadCreation[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.002"/>
+  <testcase name="testThreadScheduling[CACHED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testThreadScheduling[FIXED](4)" classname="de.learnlib.oracle.parallelism.DynamicParallelOracleTest" time="0.001"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.005"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.003"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaSupplierTest" time="0.001"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.01"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.005"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.0"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.001"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.001"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.0"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.001"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelObservableSULTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testEmptyInputs" classname="de.learnlib.oracle.parallelism.StaticParallelOracleBuilderTest" time="0.001"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.003"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.003"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.001"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testSingleMethods" classname="de.learnlib.oracle.parallelism.StaticParallelOmegaOracleTest" time="0.0"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.003"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.003"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.001"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelAdaptiveSupplierTest" time="0.0"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="1.218"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.078"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.012"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.01"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.025"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.02"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.013"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.014"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.007"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.008"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.001"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSLISULTest" time="0.0"/>
+  <testcase name="testDistinctQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.003"/>
+  <testcase name="testDistinctQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.002"/>
+  <testcase name="testDuplicateQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.002"/>
+  <testcase name="testEmpty[CACHED](1)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.001"/>
+  <testcase name="testEmpty[FIXED](2)" classname="de.learnlib.oracle.parallelism.DynamicParallelObservableSULTest" time="0.0"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.003"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.003"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.0"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.001"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.0"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.0"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.001"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.001"/>
+  <testcase name="testCustomExecutorLessThreadsAvailable" classname="de.learnlib.oracle.parallelism.StaticParallelOracleTest" time="0.001"/>
+  <testcase name="testFullLoad[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.005"/>
+  <testcase name="testFullLoad[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.005"/>
+  <testcase name="testLessThanMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.001"/>
+  <testcase name="testLessThanMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.0"/>
+  <testcase name="testLessThanSixBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.002"/>
+  <testcase name="testLessThanSixBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.002"/>
+  <testcase name="testLessThanTwoBatches[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.001"/>
+  <testcase name="testLessThanTwoBatches[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.001"/>
+  <testcase name="testMin[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.0"/>
+  <testcase name="testMin[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.0"/>
+  <testcase name="testZeroQueries[CACHED](1)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.0"/>
+  <testcase name="testZeroQueries[FIXED](2)" classname="de.learnlib.oracle.parallelism.StaticParallelSULTest" time="0.001"/>
+</testsuite>

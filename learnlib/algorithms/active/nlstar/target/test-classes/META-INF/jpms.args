@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.algorithm.nlstar=_
+--add-reads
+de.learnlib.algorithm.nlstar=ALL-UNNAMED

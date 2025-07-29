@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="46" passed="46" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T17:32:08 CEST" name="Surefire suite" finished-at="2025-05-04T17:32:08 CEST" duration-ms="184">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T17:32:08 CEST" name="Surefire test" finished-at="2025-05-04T17:32:08 CEST" duration-ms="184">
+      <class name="de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest">
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest@6a74d228]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.ResetCounterObservableSULTest -->
+      <class name="de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest@349d0836]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.ResetCounterStateLocalInputSULTest -->
+      <class name="de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest">
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest@648ee871]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testStatistics()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest@648ee871]" started-at="2025-05-04T17:32:08 CEST" name="testStatistics" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatistics -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest@648ee871]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest.testInitialState" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest@648ee871]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest.testFirstQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest@648ee871]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest.testEmptyQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+      </class> <!-- de.learnlib.filter.statistic.oracle.CounterAdaptiveOracleTest -->
+      <class name="de.learnlib.filter.statistic.sul.SymbolCounterSULTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterSULTest@36bc415e]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.SymbolCounterSULTest -->
+      <class name="de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest@6d367020]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.SymbolCounterObservableSULTest -->
+      <class name="de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest@301d8120]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.SymbolCounterStateLocalInputSULTest -->
+      <class name="de.learnlib.filter.statistic.oracle.HistogramOracleTest">
+        <test-method signature="testGetName()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testGetName" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetName -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.HistogramOracleTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.HistogramOracleTest.testFirstQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.HistogramOracleTest.testEmptyQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSummary()[pri:0, instance:de.learnlib.filter.statistic.oracle.HistogramOracleTest@67207d8a]" started-at="2025-05-04T17:32:08 CEST" name="testSummary" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.HistogramOracleTest.testSecondQueryBatch" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSummary -->
+      </class> <!-- de.learnlib.filter.statistic.oracle.HistogramOracleTest -->
+      <class name="de.learnlib.filter.statistic.sul.ResetCounterSULTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="setUp" finished-at="2025-05-04T17:32:08 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testInitialState" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testFirstQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testEmptyQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+        <test-method signature="testSharedForkCounter()[pri:0, instance:de.learnlib.filter.statistic.sul.ResetCounterSULTest@72458efc]" started-at="2025-05-04T17:32:08 CEST" name="testSharedForkCounter" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.sul.AbstractCounterSULTest.testSecondQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharedForkCounter -->
+      </class> <!-- de.learnlib.filter.statistic.sul.ResetCounterSULTest -->
+      <class name="de.learnlib.filter.statistic.oracle.CounterOracleTest">
+        <test-method signature="testInitialState()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterOracleTest@74fef3f7]" started-at="2025-05-04T17:32:08 CEST" name="testInitialState" finished-at="2025-05-04T17:32:08 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialState -->
+        <test-method signature="testStatistics()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterOracleTest@74fef3f7]" started-at="2025-05-04T17:32:08 CEST" name="testStatistics" finished-at="2025-05-04T17:32:08 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatistics -->
+        <test-method signature="testFirstQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterOracleTest@74fef3f7]" started-at="2025-05-04T17:32:08 CEST" name="testFirstQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterOracleTest.testInitialState" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstQueryBatch -->
+        <test-method signature="testEmptyQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterOracleTest@74fef3f7]" started-at="2025-05-04T17:32:08 CEST" name="testEmptyQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterOracleTest.testFirstQueryBatch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyQueryBatch -->
+        <test-method signature="testSecondQueryBatch()[pri:0, instance:de.learnlib.filter.statistic.oracle.CounterOracleTest@74fef3f7]" started-at="2025-05-04T17:32:08 CEST" name="testSecondQueryBatch" finished-at="2025-05-04T17:32:08 CEST" depends-on-methods="de.learnlib.filter.statistic.oracle.CounterOracleTest.testEmptyQueryBatch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSecondQueryBatch -->
+      </class> <!-- de.learnlib.filter.statistic.oracle.CounterOracleTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

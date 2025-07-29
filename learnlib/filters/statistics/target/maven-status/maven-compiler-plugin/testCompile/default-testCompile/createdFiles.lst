@@ -1,0 +1,16 @@
+de/learnlib/filter/statistic/oracle/CounterOracleTest.class
+de/learnlib/filter/statistic/sul/ResetCounterSULTest.class
+de/learnlib/filter/statistic/oracle/HistogramOracleTest.class
+de/learnlib/filter/statistic/sul/SymbolCounterStateLocalInputSULTest.class
+de/learnlib/filter/statistic/oracle/CounterAdaptiveOracleTest$PresetAdaptiveQuery.class
+de/learnlib/filter/statistic/oracle/CounterAdaptiveOracleTest$DummyOracle.class
+de/learnlib/filter/statistic/sul/SymbolCounterSULTest.class
+de/learnlib/filter/statistic/sul/AbstractResetCounterSULTest.class
+de/learnlib/filter/statistic/sul/AbstractCounterSULTest.class
+de/learnlib/filter/statistic/sul/ResetCounterStateLocalInputSULTest.class
+de/learnlib/filter/statistic/TestQueries.class
+de/learnlib/filter/statistic/sul/SymbolCounterObservableSULTest.class
+de/learnlib/filter/statistic/oracle/CounterAdaptiveOracleTest.class
+de/learnlib/filter/statistic/NoopQuery.class
+de/learnlib/filter/statistic/sul/ResetCounterObservableSULTest.class
+de/learnlib/filter/statistic/sul/AbstractSymbolCounterSULTest.class

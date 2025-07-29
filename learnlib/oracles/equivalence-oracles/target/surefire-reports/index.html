@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">34 methods,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testAddWord">testAddWord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testAddWord">testAddWord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.TestWordEQOracleBatchTest" class="method navigator-link" hash-for-method="testBatchMode">testBatchMode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest" class="method navigator-link" hash-for-method="testEmptyDFA">testEmptyDFA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest" class="method navigator-link" hash-for-method="testEmptyMealy">testEmptyMealy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.CExFirstOracleTest" class="method navigator-link" hash-for-method="testFindCounterExample">testFindCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testFindCounterExample">testFindCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DisproveFirstOracleTest" class="method navigator-link" hash-for-method="testFindCounterExample">testFindCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testFindCounterExample">testFindCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.vpa.RandomWellMatchedWordsEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.IncrementalWMethodEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.SampleSetEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWordsEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest" class="method navigator-link" hash-for-method="testGeneratedEQQueries">testGeneratedEQQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testGetMultiplier">testGetMultiplier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testGetMultiplier">testGetMultiplier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.CExFirstOracleTest" class="method navigator-link" hash-for-method="testGetPropertyOracles">testGetPropertyOracles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DisproveFirstOracleTest" class="method navigator-link" hash-for-method="testGetPropertyOracles">testGetPropertyOracles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testIsCounterExample">testIsCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testIsCounterExample">testIsCounterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.SampleSetEQOracleTest" class="method navigator-link" hash-for-method="testName">testName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testNextInput">testNextInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testNextInput">testNextInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest" class="method navigator-link" hash-for-method="testNumberOfTotalQueries">testNumberOfTotalQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWordsEQOracleTest" class="method navigator-link" hash-for-method="testNumberOfTotalQueries">testNumberOfTotalQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest" class="method navigator-link" hash-for-method="testNumberOfTotalQueries">testNumberOfTotalQueries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.spa.WMethodEQOracleTest" class="method navigator-link" hash-for-method="testOracle">testOracle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.spmm.WMethodEQOracleTest" class="method navigator-link" hash-for-method="testOracle">testOracle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.mealy.RandomWalkEQOracleTest" class="method navigator-link" hash-for-method="testOracle">testOracle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.sba.WMethodEQOracleTest" class="method navigator-link" hash-for-method="testOracle">testOracle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.spa.WpMethodEQOracleTest" class="method navigator-link" hash-for-method="testOracle">testOracle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.DFABFInclusionOracleTest" class="method navigator-link" hash-for-method="testPre">testPre</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest" class="method navigator-link" hash-for-method="testPre">testPre</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.DisproveFirstOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindCounterExample">
+                  </a> <!-- testFindCounterExample -->
+                  <span class="method-name">testFindCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPropertyOracles">
+                  </a> <!-- testGetPropertyOracles -->
+                  <span class="method-name">testGetPropertyOracles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.spa.WMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOracle">
+                  </a> <!-- testOracle -->
+                  <span class="method-name">testOracle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyDFA">
+                  </a> <!-- testEmptyDFA -->
+                  <span class="method-name">testEmptyDFA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyMealy">
+                  </a> <!-- testEmptyMealy -->
+                  <span class="method-name">testEmptyMealy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.CExFirstOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindCounterExample">
+                  </a> <!-- testFindCounterExample -->
+                  <span class="method-name">testFindCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPropertyOracles">
+                  </a> <!-- testGetPropertyOracles -->
+                  <span class="method-name">testGetPropertyOracles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.vpa.RandomWellMatchedWordsEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddWord">
+                  </a> <!-- testAddWord -->
+                  <span class="method-name">testAddWord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindCounterExample">
+                  </a> <!-- testFindCounterExample -->
+                  <span class="method-name">testFindCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetMultiplier">
+                  </a> <!-- testGetMultiplier -->
+                  <span class="method-name">testGetMultiplier</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsCounterExample">
+                  </a> <!-- testIsCounterExample -->
+                  <span class="method-name">testIsCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNextInput">
+                  </a> <!-- testNextInput -->
+                  <span class="method-name">testNextInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPre">
+                  </a> <!-- testPre -->
+                  <span class="method-name">testPre</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumberOfTotalQueries">
+                  </a> <!-- testNumberOfTotalQueries -->
+                  <span class="method-name">testNumberOfTotalQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.spa.WpMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOracle">
+                  </a> <!-- testOracle -->
+                  <span class="method-name">testOracle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.sba.WMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOracle">
+                  </a> <!-- testOracle -->
+                  <span class="method-name">testOracle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.DFABFInclusionOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddWord">
+                  </a> <!-- testAddWord -->
+                  <span class="method-name">testAddWord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindCounterExample">
+                  </a> <!-- testFindCounterExample -->
+                  <span class="method-name">testFindCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetMultiplier">
+                  </a> <!-- testGetMultiplier -->
+                  <span class="method-name">testGetMultiplier</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsCounterExample">
+                  </a> <!-- testIsCounterExample -->
+                  <span class="method-name">testIsCounterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNextInput">
+                  </a> <!-- testNextInput -->
+                  <span class="method-name">testNextInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPre">
+                  </a> <!-- testPre -->
+                  <span class="method-name">testPre</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.RandomWordsEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumberOfTotalQueries">
+                  </a> <!-- testNumberOfTotalQueries -->
+                  <span class="method-name">testNumberOfTotalQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.spmm.WMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOracle">
+                  </a> <!-- testOracle -->
+                  <span class="method-name">testOracle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumberOfTotalQueries">
+                  </a> <!-- testNumberOfTotalQueries -->
+                  <span class="method-name">testNumberOfTotalQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.TestWordEQOracleBatchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBatchMode">
+                  </a> <!-- testBatchMode -->
+                  <span class="method-name">testBatchMode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.IncrementalWMethodEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.SampleSetEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneratedEQQueries">
+                  </a> <!-- testGeneratedEQQueries -->
+                  <span class="method-name">testGeneratedEQQueries</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testName">
+                  </a> <!-- testName -->
+                  <span class="method-name">testName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.oracle.equivalence.mealy.RandomWalkEQOracleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOracle">
+                  </a> <!-- testOracle -->
+                  <span class="method-name">testOracle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.RandomWordsEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.sba.WMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.vpa.RandomWellMatchedWordsEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.spa.WpMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.spa.WMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.CExFirstOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.TestWordEQOracleBatchTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.DisproveFirstOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.DFABFInclusionOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.AbstractBFInclusionOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.IncrementalWMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.SampleSetEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.spmm.WMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.mealy.RandomWalkEQOracleTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.oracle.equivalence.AbstractEQOracleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (19 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(34);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testOracle')
+data.setCell(0, 2, 'de.learnlib.oracle.equivalence.spmm.WMethodEQOracleTest')
+data.setCell(0, 3, 116);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testOracle')
+data.setCell(1, 2, 'de.learnlib.oracle.equivalence.spa.WpMethodEQOracleTest')
+data.setCell(1, 3, 90);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testOracle')
+data.setCell(2, 2, 'de.learnlib.oracle.equivalence.spa.WMethodEQOracleTest')
+data.setCell(2, 3, 79);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testOracle')
+data.setCell(3, 2, 'de.learnlib.oracle.equivalence.sba.WMethodEQOracleTest')
+data.setCell(3, 3, 70);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGeneratedEQQueries')
+data.setCell(4, 2, 'de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest')
+data.setCell(4, 3, 19);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGeneratedEQQueries')
+data.setCell(5, 2, 'de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest')
+data.setCell(5, 3, 16);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGeneratedEQQueries')
+data.setCell(6, 2, 'de.learnlib.oracle.equivalence.RandomWordsEQOracleTest')
+data.setCell(6, 3, 14);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testFindCounterExample')
+data.setCell(7, 2, 'de.learnlib.oracle.equivalence.CExFirstOracleTest')
+data.setCell(7, 3, 11);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGeneratedEQQueries')
+data.setCell(8, 2, 'de.learnlib.oracle.equivalence.IncrementalWMethodEQOracleTest')
+data.setCell(8, 3, 11);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGeneratedEQQueries')
+data.setCell(9, 2, 'de.learnlib.oracle.equivalence.vpa.RandomWellMatchedWordsEQOracleTest')
+data.setCell(9, 3, 9);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testFindCounterExample')
+data.setCell(10, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(10, 3, 5);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testNextInput')
+data.setCell(11, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testEmptyMealy')
+data.setCell(12, 2, 'de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testBatchMode')
+data.setCell(13, 2, 'de.learnlib.oracle.equivalence.TestWordEQOracleBatchTest')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testFindCounterExample')
+data.setCell(14, 2, 'de.learnlib.oracle.equivalence.DisproveFirstOracleTest')
+data.setCell(14, 3, 3);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testEmptyDFA')
+data.setCell(15, 2, 'de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testOracle')
+data.setCell(16, 2, 'de.learnlib.oracle.equivalence.mealy.RandomWalkEQOracleTest')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testFindCounterExample')
+data.setCell(17, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testPre')
+data.setCell(18, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testGeneratedEQQueries')
+data.setCell(19, 2, 'de.learnlib.oracle.equivalence.SampleSetEQOracleTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testAddWord')
+data.setCell(20, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testIsCounterExample')
+data.setCell(21, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testNumberOfTotalQueries')
+data.setCell(22, 2, 'de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testName')
+data.setCell(23, 2, 'de.learnlib.oracle.equivalence.SampleSetEQOracleTest')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testGetMultiplier')
+data.setCell(24, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testIsCounterExample')
+data.setCell(25, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testNumberOfTotalQueries')
+data.setCell(26, 2, 'de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testAddWord')
+data.setCell(27, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testNextInput')
+data.setCell(28, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetPropertyOracles')
+data.setCell(29, 2, 'de.learnlib.oracle.equivalence.CExFirstOracleTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testPre')
+data.setCell(30, 2, 'de.learnlib.oracle.equivalence.DFABFInclusionOracleTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testGetMultiplier')
+data.setCell(31, 2, 'de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testGetPropertyOracles')
+data.setCell(32, 2, 'de.learnlib.oracle.equivalence.DisproveFirstOracleTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testNumberOfTotalQueries')
+data.setCell(33, 2, 'de.learnlib.oracle.equivalence.RandomWordsEQOracleTest')
+data.setCell(33, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 468 ms</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.RandomWordsEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumberOfTotalQueries</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.MealyBFInclusionOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFindCounterExample</span>
+                <span class="method-start">1013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1019 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1023 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testIsCounterExample</span>
+                <span class="method-start">1026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddWord</span>
+                <span class="method-start">1031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1034 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetMultiplier</span>
+                <span class="method-start">1040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNextInput</span>
+                <span class="method-start">1044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPre</span>
+                <span class="method-start">1052 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1053 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.sba.WMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOracle</span>
+                <span class="method-start">1055 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.vpa.RandomWellMatchedWordsEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1126 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">1127 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.RandomWMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1137 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">1143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumberOfTotalQueries</span>
+                <span class="method-start">1164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.spa.WpMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOracle</span>
+                <span class="method-start">1166 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.spa.WMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOracle</span>
+                <span class="method-start">1257 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.CExFirstOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFindCounterExample</span>
+                <span class="method-start">1586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetPropertyOracles</span>
+                <span class="method-start">1605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1606 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.TestWordEQOracleBatchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testBatchMode</span>
+                <span class="method-start">1608 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.DisproveFirstOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFindCounterExample</span>
+                <span class="method-start">1619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetPropertyOracles</span>
+                <span class="method-start">1629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1630 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.DFABFInclusionOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFindCounterExample</span>
+                <span class="method-start">1665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1667 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testIsCounterExample</span>
+                <span class="method-start">1669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1670 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAddWord</span>
+                <span class="method-start">1674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetMultiplier</span>
+                <span class="method-start">1677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1678 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNextInput</span>
+                <span class="method-start">1681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1682 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPre</span>
+                <span class="method-start">1685 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1686 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.IncrementalWMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1686 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">1688 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.SampleSetEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1700 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">1702 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testName</span>
+                <span class="method-start">1705 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.spmm.WMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOracle</span>
+                <span class="method-start">1707 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.RandomWpMethodEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1824 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGeneratedEQQueries</span>
+                <span class="method-start">1826 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumberOfTotalQueries</span>
+                <span class="method-start">1843 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.EmptyAutomatonOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEmptyDFA</span>
+                <span class="method-start">1845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyMealy</span>
+                <span class="method-start">1848 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.oracle.equivalence.mealy.RandomWalkEQOracleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testOracle</span>
+                <span class="method-start">1853 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

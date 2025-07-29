@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<!--
+Copyright (C) 2013-2025 TU Dortmund University
+This file is part of LearnLib <https://learnlib.de>.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.learnlib</groupId>
+        <artifactId>learnlib-parent</artifactId>
+        <version>0.19.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>learnlib-build-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <name>LearnLib :: Build Parent</name>
+    <description>
+        A utility parent, that defines certain plugin executions for the build process. May be used to define
+        dependencies on the "build-tools" artifact without introducing cyclic dependencies with the general parent.
+    </description>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <configuration>
+                        <!-- Since jacoco's agent instrumentation is a separate step from its report generation, we need
+                             to explicitly exclude generated classes here and cannot rely on things such as a @Generated
+                             annotation. Otherwise, tools such as the coveralls-plugin (which scans the agent's output)
+                             fail on "unknown" classes.
+                         -->
+                        <excludes>
+                            <!-- generated builders for learning algorithms -->
+                            <exclude>**/ADTLearnerBuilder.class</exclude>
+                            <exclude>**/ClassicLStar*Builder.class</exclude>
+                            <exclude>**/ExtensibleLStar*Builder.class</exclude>
+                            <exclude>**/KearnsVazirani*Builder.class</exclude>
+                            <exclude>**/LSharp*Builder.class</exclude>
+                            <exclude>**/MalerPnueli*Builder.class</exclude>
+                            <exclude>**/MealyDHCBuilder.class</exclude>
+                            <exclude>**/NLStarLearnerBuilder.class</exclude>
+                            <exclude>**/OPLearner*Builder.class</exclude>
+                            <exclude>**/RivestSchapire*Builder.class</exclude>
+                            <exclude>**/TTTLearner*Builder.class</exclude>
+
+                            <!-- generated builders for reuse trees/oracles -->
+                            <exclude>de/learnlib/filter/reuse/**/Reuse*Builder.class</exclude>
+
+                            <!-- generated refinements for oracles -->
+                            <exclude>de/learnlib/filter/cache/**/*Interning*.class</exclude>
+                            <exclude>de/learnlib/filter/statistic/**/DFA*.class</exclude>
+                            <exclude>de/learnlib/filter/statistic/**/Mealy*.class</exclude>
+                            <exclude>de/learnlib/filter/statistic/**/Moore*.class</exclude>
+                            <exclude>de/learnlib/oracle/emptiness/DFA*.class</exclude>
+                            <exclude>de/learnlib/oracle/emptiness/Mealy*.class</exclude>
+                            <exclude>de/learnlib/oracle/equivalence/DFA*.class</exclude>
+                            <exclude>de/learnlib/oracle/equivalence/Mealy*.class</exclude>
+                            <exclude>de/learnlib/oracle/equivalence/Moore*.class</exclude>
+                            <exclude>de/learnlib/oracle/membership/*SimulatorOracle.class</exclude>
+                            <exclude>de/learnlib/oracle/property/DFA*Chain.class</exclude>
+                            <exclude>de/learnlib/oracle/property/Mealy*Chain.class</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>code-analysis</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>com.github.spotbugs</groupId>
+                            <artifactId>spotbugs-maven-plugin</artifactId>
+                            <configuration>
+                                <excludeFilterFile>/learnlib-spotbugs-exclusions.xml</excludeFilterFile>
+                                <effort>Max</effort>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>de.learnlib</groupId>
+                                    <artifactId>learnlib-build-config</artifactId>
+                                    <version>${project.version}</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-pmd-plugin</artifactId>
+                            <configuration>
+                                <rulesets>
+                                    <ruleset>/learnlib-pmd-ruleset.xml</ruleset>
+                                </rulesets>
+                                <excludes>**/module-info.java</excludes>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>de.learnlib</groupId>
+                                    <artifactId>learnlib-build-config</artifactId>
+                                    <version>${project.version}</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-checkstyle-plugin</artifactId>
+                            <configuration>
+                                <configLocation>/automatalib-learnlib-checkstyle.xml</configLocation>
+                                <headerLocation>/license-header-java.txt</headerLocation>
+                                <suppressionsLocation>/learnlib-checkstyle-suppressions.xml</suppressionsLocation>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                <linkXRef>false</linkXRef>
+                                <excludes>**/module-info.java</excludes>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>com.puppycrawl.tools</groupId>
+                                    <artifactId>checkstyle</artifactId>
+                                    <version>${checkstyle.version}</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>de.learnlib</groupId>
+                                    <artifactId>learnlib-build-config</artifactId>
+                                    <version>${project.version}</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>pmd</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>cf</id>
+            <dependencies>
+                <!--
+                 CF needs access to qualifier annotations even if they are not used in the code directly.
+                 Therefore, provide them by default.
+                -->
+                <dependency>
+                    <groupId>org.checkerframework</groupId>
+                    <artifactId>checker-qual</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>cf-compile</id>
+                                <phase>compile</phase>
+                                <goals>
+                                    <goal>compile</goal>
+                                </goals>
+                                <configuration>
+                                    <release>11</release>
+                                    <failOnWarning>true</failOnWarning>
+                                    <fork>true</fork>
+                                    <!--
+                                     Setting a different output directly can fail the build when using other annotation
+                                     processors as well. However, with using the same output directory, we pack Java 11
+                                     code in the jars which will fail other analysis tools. Currently, checkerframework
+                                     cannot be run with our other analysis steps...
+                                     -->
+                                    <!--outputDirectory>${project.build.directory}/checkerframework</outputDirectory-->
+                                    <annotationProcessorPaths>
+                                        <path>
+                                            <groupId>org.checkerframework</groupId>
+                                            <artifactId>checker</artifactId>
+                                            <version>${checkerframework.version}</version>
+                                        </path>
+                                    </annotationProcessorPaths>
+                                    <annotationProcessors>
+                                        <annotationProcessor>org.checkerframework.checker.nullness.NullnessChecker</annotationProcessor>
+                                    </annotationProcessors>
+                                    <compilerArgs>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
+                                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED</arg>
+                                        <arg>-AskipUses=^java.lang.ThreadLocal|^org.testng.*</arg>
+                                        <arg>-AsuppressWarnings=uninitialized</arg>
+                                        <arg>-AassumeAssertionsAreEnabled</arg>
+                                        <arg>-Astubs=collection-object-parameters-may-be-null.astub</arg>
+                                    </compilerArgs>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>cf-test-compile</id>
+                                <phase>test-compile</phase>
+                                <goals>
+                                    <goal>testCompile</goal>
+                                </goals>
+                                <configuration>
+                                    <failOnWarning>true</failOnWarning>
+                                    <fork>true</fork>
+                                    <!--
+                                     Setting a different output directly can fail the build when using other annotation
+                                     processors as well. However, with using the same output directory, we pack Java 11
+                                     code in the jars which will fail other analysis tools. Currently, checkerframework
+                                     cannot be run with our other analysis steps...
+                                     -->
+                                    <!--outputDirectory>${project.build.directory}/checkerframework</outputDirectory-->
+                                    <annotationProcessorPaths>
+                                        <path>
+                                            <groupId>org.checkerframework</groupId>
+                                            <artifactId>checker</artifactId>
+                                            <version>${checkerframework.version}</version>
+                                        </path>
+                                    </annotationProcessorPaths>
+                                    <annotationProcessors>
+                                        <annotationProcessor>org.checkerframework.checker.nullness.NullnessChecker</annotationProcessor>
+                                    </annotationProcessors>
+                                    <compilerArgs>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
+                                        <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
+                                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED</arg>
+                                        <arg>-AonlyDefs=^de\.learnlib</arg>
+                                        <arg>-AskipUses=.*</arg>
+                                        <arg>-AsuppressWarnings=uninitialized</arg>
+                                        <arg>-AassumeAssertionsAreEnabled</arg>
+                                        <arg>-Astubs=collection-object-parameters-may-be-null.astub</arg>
+                                    </compilerArgs>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

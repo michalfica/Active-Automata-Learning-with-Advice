@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T15:12:36 CEST" name="Surefire suite" finished-at="2025-05-04T15:12:36 CEST" duration-ms="78">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T15:12:36 CEST" name="Surefire test" finished-at="2025-05-04T15:12:36 CEST" duration-ms="78">
+      <class name="de.learnlib.algorithm.nlstar.NLStarTest">
+        <test-method signature="testIssue70()[pri:0, instance:de.learnlib.algorithm.nlstar.NLStarTest@5ace1ed4]" started-at="2025-05-04T15:12:36 CEST" name="testIssue70" finished-at="2025-05-04T15:12:36 CEST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIssue70 -->
+      </class> <!-- de.learnlib.algorithm.nlstar.NLStarTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

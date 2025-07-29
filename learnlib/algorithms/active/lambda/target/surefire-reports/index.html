@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest" class="method navigator-link" hash-for-method="testGrowingAlphabet">testGrowingAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest" class="method navigator-link" hash-for-method="testGrowingAlphabet">testGrowingAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest" class="method navigator-link" hash-for-method="testGrowingAlphabet">testGrowingAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest" class="method navigator-link" hash-for-method="testGrowingAlphabet">testGrowingAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest" class="method navigator-link" hash-for-method="testInitialAlphabet">testInitialAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest" class="method navigator-link" hash-for-method="testInitialAlphabet">testInitialAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest" class="method navigator-link" hash-for-method="testInitialAlphabet">testInitialAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest" class="method navigator-link" hash-for-method="testInitialAlphabet">testInitialAlphabet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFACounterexampleQueueTest" class="method navigator-link" hash-for-method="testPop">testPop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFACounterexampleQueueTest" class="method navigator-link" hash-for-method="testPop">testPop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyResumableTest" class="method navigator-link" hash-for-method="testSuspendAndResumeLearner">testSuspendAndResumeLearner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAResumableTest" class="method navigator-link" hash-for-method="testSuspendAndResumeLearner">testSuspendAndResumeLearner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGrowingAlphabet">
+                  </a> <!-- testGrowingAlphabet -->
+                  <span class="method-name">testGrowingAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInitialAlphabet">
+                  </a> <!-- testInitialAlphabet -->
+                  <span class="method-name">testInitialAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGrowingAlphabet">
+                  </a> <!-- testGrowingAlphabet -->
+                  <span class="method-name">testGrowingAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInitialAlphabet">
+                  </a> <!-- testInitialAlphabet -->
+                  <span class="method-name">testInitialAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyResumableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuspendAndResumeLearner">
+                  </a> <!-- testSuspendAndResumeLearner -->
+                  <span class="method-name">testSuspendAndResumeLearner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGrowingAlphabet">
+                  </a> <!-- testGrowingAlphabet -->
+                  <span class="method-name">testGrowingAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInitialAlphabet">
+                  </a> <!-- testInitialAlphabet -->
+                  <span class="method-name">testInitialAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAResumableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuspendAndResumeLearner">
+                  </a> <!-- testSuspendAndResumeLearner -->
+                  <span class="method-name">testSuspendAndResumeLearner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGrowingAlphabet">
+                  </a> <!-- testGrowingAlphabet -->
+                  <span class="method-name">testGrowingAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInitialAlphabet">
+                  </a> <!-- testInitialAlphabet -->
+                  <span class="method-name">testInitialAlphabet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFACounterexampleQueueTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPop">
+                  </a> <!-- testPop -->
+                  <span class="method-name">testPop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFACounterexampleQueueTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPop">
+                  </a> <!-- testPop -->
+                  <span class="method-name">testPop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFACounterexampleQueueTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAResumableTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyResumableTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFACounterexampleQueueTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest&quot;/&gt;
+      &lt;class name=&quot;de.learnlib.algorithm.lambda.AbstractCounterexampleQueueTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSuspendAndResumeLearner')
+data.setCell(0, 2, 'de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAResumableTest')
+data.setCell(0, 3, 648);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGrowingAlphabet')
+data.setCell(1, 2, 'de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest')
+data.setCell(1, 3, 45);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGrowingAlphabet')
+data.setCell(2, 2, 'de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest')
+data.setCell(2, 3, 24);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testPop')
+data.setCell(3, 2, 'de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFACounterexampleQueueTest')
+data.setCell(3, 3, 22);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGrowingAlphabet')
+data.setCell(4, 2, 'de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest')
+data.setCell(4, 3, 13);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGrowingAlphabet')
+data.setCell(5, 2, 'de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest')
+data.setCell(5, 3, 11);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSuspendAndResumeLearner')
+data.setCell(6, 2, 'de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyResumableTest')
+data.setCell(6, 3, 9);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPop')
+data.setCell(7, 2, 'de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFACounterexampleQueueTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testInitialAlphabet')
+data.setCell(8, 2, 'de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInitialAlphabet')
+data.setCell(9, 2, 'de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testInitialAlphabet')
+data.setCell(10, 2, 'de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInitialAlphabet')
+data.setCell(11, 2, 'de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 776 ms</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFACounterexampleQueueTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPop</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAGrowingAlphabetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGrowingAlphabet</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInitialAlphabet</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.lstar.dfa.LLambdaDFAResumableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSuspendAndResumeLearner</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyGrowingAlphabetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">738 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGrowingAlphabet</span>
+                <span class="method-start">743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInitialAlphabet</span>
+                <span class="method-start">768 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.lstar.mealy.LLambdaMealyResumableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">769 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSuspendAndResumeLearner</span>
+                <span class="method-start">770 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFAGrowingAlphabetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">780 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGrowingAlphabet</span>
+                <span class="method-start">781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInitialAlphabet</span>
+                <span class="method-start">795 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.ttt.dfa.TTTLambdaDFACounterexampleQueueTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPop</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">de.learnlib.algorithm.lambda.ttt.mealy.TTTLambdaMealyGrowingAlphabetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">798 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGrowingAlphabet</span>
+                <span class="method-start">799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInitialAlphabet</span>
+                <span class="method-start">810 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

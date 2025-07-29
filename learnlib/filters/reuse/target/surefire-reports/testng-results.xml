@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T17:32:17 CEST" name="Surefire suite" finished-at="2025-05-04T17:32:17 CEST" duration-ms="133">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T17:32:17 CEST" name="Surefire test" finished-at="2025-05-04T17:32:17 CEST" duration-ms="133">
+      <class name="de.learnlib.filter.reuse.test.LearningTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.LearningTest@16a0ee18]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="simpleTest()[pri:0, instance:de.learnlib.filter.reuse.test.LearningTest@16a0ee18]" started-at="2025-05-04T17:32:17 CEST" name="simpleTest" finished-at="2025-05-04T17:32:17 CEST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+      </class> <!-- de.learnlib.filter.reuse.test.LearningTest -->
+      <class name="de.learnlib.filter.reuse.test.DomainKnowledgeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPumpSymbolsSimple()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="testPumpSymbolsSimple" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPumpSymbolsSimple -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testReuseNodePrefixWhileReusing()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="testReuseNodePrefixWhileReusing" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReuseNodePrefixWhileReusing -->
+        <test-method signature="testPumpSymbolsComplex()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="testPumpSymbolsComplex" finished-at="2025-05-04T17:32:17 CEST" depends-on-methods="de.learnlib.filter.reuse.test.DomainKnowledgeTest.testPumpSymbolsSimple" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPumpSymbolsComplex -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.DomainKnowledgeTest@2a54a73f]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- de.learnlib.filter.reuse.test.DomainKnowledgeTest -->
+      <class name="de.learnlib.filter.reuse.test.ReuseOracleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConflictException()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testConflictException" finished-at="2025-05-04T17:32:17 CEST" duration-ms="8" status="PASS">
+          <exception class="de.learnlib.filter.reuse.ReuseException">
+            <message>
+              <![CDATA[Conflict: input '1 1 3', output 'ok different notimp', i=1, cached output 'ok']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[de.learnlib.filter.reuse.ReuseException: Conflict: input '1 1 3', output 'ok different notimp', i=1, cached output 'ok'
+at de.learnlib.filter.reuse@0.19.0-SNAPSHOT/de.learnlib.filter.reuse.tree.ReuseTree.insert(ReuseTree.java:350)
+at de.learnlib.filter.reuse@0.19.0-SNAPSHOT/de.learnlib.filter.reuse.tree.ReuseTree.insert(ReuseTree.java:301)
+at de.learnlib.filter.reuse@0.19.0-SNAPSHOT/de.learnlib.filter.reuse.test.ReuseOracleTest.testConflictException(ReuseOracleTest.java:232)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- de.learnlib.filter.reuse.ReuseException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConflictException -->
+        <test-method signature="testNoReusePossible()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testNoReusePossible" finished-at="2025-05-04T17:32:17 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoReusePossible -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testReusePossible()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testReusePossible" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReusePossible -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTreeIsEmpty()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testTreeIsEmpty" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTreeIsEmpty -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testReusePossibleWithInvalidation()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testReusePossibleWithInvalidation" finished-at="2025-05-04T17:32:17 CEST" depends-on-methods="de.learnlib.filter.reuse.test.ReuseOracleTest.testNoReusePossible" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReusePossibleWithInvalidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTreeIsAbleToCache()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testTreeIsAbleToCache" finished-at="2025-05-04T17:32:17 CEST" depends-on-methods="de.learnlib.filter.reuse.test.ReuseOracleTest.testTreeIsEmpty" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTreeIsAbleToCache -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTreeDoesNotPump()[pri:0, instance:de.learnlib.filter.reuse.test.ReuseOracleTest@1cbb87f3]" started-at="2025-05-04T17:32:17 CEST" name="testTreeDoesNotPump" finished-at="2025-05-04T17:32:17 CEST" depends-on-methods="de.learnlib.filter.reuse.test.ReuseOracleTest.testTreeIsAbleToCache" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTreeDoesNotPump -->
+      </class> <!-- de.learnlib.filter.reuse.test.ReuseOracleTest -->
+      <class name="de.learnlib.filter.reuse.test.QuiescenceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:de.learnlib.filter.reuse.test.QuiescenceTest@3d6f0054]" started-at="2025-05-04T17:32:17 CEST" name="setUp" finished-at="2025-05-04T17:32:17 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="simpleTest()[pri:0, instance:de.learnlib.filter.reuse.test.QuiescenceTest@3d6f0054]" started-at="2025-05-04T17:32:17 CEST" name="simpleTest" finished-at="2025-05-04T17:32:17 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+      </class> <!-- de.learnlib.filter.reuse.test.QuiescenceTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

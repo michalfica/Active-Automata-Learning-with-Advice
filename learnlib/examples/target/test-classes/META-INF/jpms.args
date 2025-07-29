@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.example=_
+--add-reads
+de.learnlib.example=ALL-UNNAMED

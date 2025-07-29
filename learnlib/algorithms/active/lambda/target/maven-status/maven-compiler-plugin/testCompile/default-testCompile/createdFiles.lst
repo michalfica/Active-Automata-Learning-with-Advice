@@ -1,0 +1,14 @@
+de/learnlib/algorithm/lambda/ttt/mealy/TTTLambdaMealyGrowingAlphabetTest.class
+de/learnlib/algorithm/lambda/lstar/mealy/LLambdaMealyGrowingAlphabetTest.class
+de/learnlib/algorithm/lambda/ttt/dfa/TTTLambdaDFACounterexampleQueueTest.class
+de/learnlib/algorithm/lambda/lstar/mealy/it/LLambdaMealyIT$ShorteningEQO.class
+de/learnlib/algorithm/lambda/ttt/mealy/it/TTTLambdaMealyIT.class
+de/learnlib/algorithm/lambda/lstar/dfa/LLambdaDFAResumableTest.class
+de/learnlib/algorithm/lambda/ttt/dfa/it/TTTLambdaDFAIT.class
+de/learnlib/algorithm/lambda/lstar/mealy/LLambdaMealyResumableTest.class
+de/learnlib/algorithm/lambda/lstar/dfa/LLambdaDFACounterexampleQueueTest.class
+de/learnlib/algorithm/lambda/lstar/dfa/LLambdaDFAGrowingAlphabetTest.class
+de/learnlib/algorithm/lambda/AbstractCounterexampleQueueTest.class
+de/learnlib/algorithm/lambda/lstar/mealy/it/LLambdaMealyIT.class
+de/learnlib/algorithm/lambda/lstar/dfa/it/LLambdaDFAIT.class
+de/learnlib/algorithm/lambda/ttt/dfa/TTTLambdaDFAGrowingAlphabetTest.class

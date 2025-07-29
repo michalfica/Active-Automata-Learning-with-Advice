@@ -1,0 +1,13 @@
+de/learnlib/algorithm/ttt/vpa/Splitter.class
+de/learnlib/algorithm/ttt/vpa/Splitter$SplitType.class
+de/learnlib/algorithm/ttt/vpa/TTTLearnerVPA$1.class
+de/learnlib/algorithm/ttt/vpa/Splitter$1.class
+de/learnlib/algorithm/ttt/vpa/TTTLearnerVPA.class
+de/learnlib/algorithm/ttt/vpa/TTTLearnerVPA$SplitQuery.class
+de/learnlib/algorithm/ttt/vpa/OutputInconsistency.class
+module-info.class
+de/learnlib/algorithm/ttt/vpa/ExtractRecord.class
+de/learnlib/algorithm/ttt/vpa/NonDetState.class
+de/learnlib/algorithm/ttt/vpa/NondetStackContents.class
+de/learnlib/algorithm/ttt/vpa/GlobalSplitter.class
+de/learnlib/algorithm/ttt/vpa/TTTLearnerVPABuilder.class

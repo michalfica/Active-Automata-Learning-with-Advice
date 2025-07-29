@@ -1,0 +1,11 @@
+de/learnlib/algorithm/ttt/TTTLearnerMooreResumableLearnerTest.class
+de/learnlib/algorithm/ttt/mealy/it/TTTLearnerMealyIT.class
+de/learnlib/algorithm/ttt/TTTLearnerMealyGrowingAlphabetTest.class
+de/learnlib/algorithm/ttt/TTTLearnerMealyResumableLearnerTest.class
+de/learnlib/algorithm/ttt/TTTVisualizationTest.class
+de/learnlib/algorithm/ttt/dfa/it/PrefixTTTLearnerDFAIT.class
+de/learnlib/algorithm/ttt/TTTLearnerDFAResumableLearnerTest.class
+de/learnlib/algorithm/ttt/TTTLearnerMooreGrowingAlphabetTest.class
+de/learnlib/algorithm/ttt/dfa/it/TTTLearnerDFAIT.class
+de/learnlib/algorithm/ttt/moore/it/TTTLearnerMooreIT.class
+de/learnlib/algorithm/ttt/TTTDFAGrowingAlphabetTest.class

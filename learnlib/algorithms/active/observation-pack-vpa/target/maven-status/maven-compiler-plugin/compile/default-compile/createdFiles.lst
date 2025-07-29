@@ -1,0 +1,16 @@
+de/learnlib/algorithm/observationpack/vpa/AbstractVPALearner$BuilderDefaults.class
+de/learnlib/algorithm/observationpack/vpa/OPLearnerVPABuilder.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/OneSEVPAHypothesis$1.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/OneSEVPAHypothesis.class
+de/learnlib/algorithm/observationpack/vpa/OPLearnerVPA$PrefixTransformAcex.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/HypIntTrans.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/HypLoc.class
+de/learnlib/algorithm/observationpack/vpa/OPLearnerVPA.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/DTNode.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/ContextPair.class
+de/learnlib/algorithm/observationpack/vpa/AbstractVPALearner.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/TransList.class
+module-info.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/HypRetTrans.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/DTree.class
+de/learnlib/algorithm/observationpack/vpa/hypothesis/AbstractHypTrans.class

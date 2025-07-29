@@ -1,0 +1,4 @@
+--patch-module
+de.learnlib.algorithm.kv=_
+--add-reads
+de.learnlib.algorithm.kv=ALL-UNNAMED
