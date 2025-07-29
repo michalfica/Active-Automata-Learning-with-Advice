@@ -1,4 +1,3 @@
-# from advice_system1 import advice_system1
 from importlib import reload
 import utils.advice_systems.SRS as SRS
 
@@ -16,7 +15,7 @@ class SRSconv_with_common(SRS):
         if len(common_letters) == 0:
             assert (
                 len(alphabet) % 2 == 0
-            ), "Nie zgadza się rozmiar alfabetu !!!(załozenie jest takie ze oba automaty, które wchodzą w skałąd konwolucji majaą alfabet tego samego rozmiaru)"
+            ), "Assumption not met, both automatons that are part of convolution must have equal sizes"
             st_alphbt = alphabet[: len(alphabet) // 2]
             nd_alphbt = alphabet[len(alphabet) // 2 :]
         else:

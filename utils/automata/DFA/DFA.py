@@ -3,10 +3,6 @@ from itertools import product
 import random
 import string
 
-import subprocess
-
-from collections import defaultdict
-
 
 class DFA:
     """
@@ -17,17 +13,16 @@ class DFA:
     """
 
     NO_ANSWER = ""
-    ACCEPT = 1
+
     NOT_DEFINED, SIMPLE_DFA = "not_defined", "DFA"
     RANDOM_DFA = "randomDFA"
     CONV_DFA = "convDFA"
     CONV_DFA_WITH_COMMON = "convDFAwithCommon"
+    INDEMPOTENT = "idempotent"
     BITWISE_ADDITION = "bitwise_addition"
     AND_TYPE_PATTERN_DFA, OR_TYPE_PATTERN_DFA = "AND", "OR"
+
     EMPTY_STRING = ""
-    NOT_RESETING_WORD = "-1"
-    STATE_NOT_ACCESSIBLE = "-1"
-    INDEMPOTENT = "idempotent"
 
     def __init__(self, Q=0, input_signs=None, δ=None, F=None, type_=NOT_DEFINED):
         if input_signs is None:
@@ -43,14 +38,11 @@ class DFA:
 
         self.indempotent_letter = None
 
-        self.output_signs = []
         self.δ = δ
         self.F = F
         self.type = type_
-        self.reset_word = DFA.NOT_RESETING_WORD
 
         self.mapping = dict()
-        self.pruned = False
         self.selectors = dict()
 
     def __str__(self):
@@ -61,11 +53,7 @@ class DFA:
             from_q = str(q) + ": \n"
             for a in self.input_signs:
                 if (q, a) not in self.δ:
-                    if self.pruned:
-                        continue
-                    # TO DO: nie jestem pewny czy ten assert jest dobrze napisany !
                     assert False, f"There is no such ({q}, {a}) trasition in automaton!"
-                # print(f"({q},{a}) --> {self.δ[(q,a)]}")
                 from_q += a + " " + str(self.δ[(q, a)]) + "; "
             print(from_q)
 
@@ -74,34 +62,6 @@ class DFA:
         print(f"transitions: ")
         self.print_transitions()
         print(f"Accepting states - {self.F}")
-
-    def print_java_format(self):
-        result = (
-            "Alphabet<Character> sigma = Alphabets.characters('a', '"
-            + string.ascii_lowercase[len(self.input_signs) - 1]
-            + "');\n"
-        )
-        result += "AutomatonBuilders.newDFA(sigma)\n"
-        result += ' .withInitial("q0")\n'
-        for q in range(self.Q):
-            result += ' .from("q' + str(q) + '")\n'
-            for i, a in enumerate(self.input_signs):
-                if (q, a) not in self.δ:
-                    if self.pruned:
-                        continue
-                    # TO DO: nie jestem pewny czy ten assert jest dobrze napisany !
-                    assert False, f"There is no such ({q}, {a}) trasition in automaton!"
-                result += (
-                    "     .on('"
-                    + string.ascii_lowercase[i]
-                    + "').to(\"q"
-                    + str(self.δ[(q, a)])
-                    + '")\n'
-                )
-        accept_states = ", ".join(['"q' + str(q) + '"' for q in list(self.F)])
-        result += " .withAccepting(" + accept_states + ")\n"
-        result += " .create();"
-        return result
 
     """ 
     returns string - complete descreption of dfa in the following format:
@@ -147,9 +107,6 @@ class DFA:
     def route_and_return_q(self, w, q0=0):
         q = q0
         for a in w:
-            if self.pruned and (q, a) not in self.δ:
-                return DFA.STATE_NOT_ACCESSIBLE
-
             assert (q, a) in self.δ, "There is no such trasition in automaton!"
             q = self.δ[(q, a)]
         return q
@@ -171,10 +128,7 @@ class DFA:
             while not Q.empty():
                 q, w = Q.get()
                 for a in self.input_signs:
-                    if self.pruned and (q, a) not in self.δ:
-                        continue
-                    else:
-                        addToQueue(self.δ[(q, a)], w + a)
+                    addToQueue(self.δ[(q, a)], w + a)
             return selectors
 
         return BFS()
@@ -345,7 +299,7 @@ class DFA:
         self.type = DFA.CONV_DFA_WITH_COMMON
         self.Q = dfa1.Q * dfa2.Q
         """
-        Kolejnosć liter na liście jest bardzo istotna POLEGA NA TYM SRS !!! 
+        Order of the letters in the list is important, SRS depends on it!
         """
         self.common_letters = [
             a for a in dfa1.input_signs if a in set(dfa2.input_signs)
