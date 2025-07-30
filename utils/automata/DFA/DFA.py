@@ -1,7 +1,6 @@
 from queue import Queue
 from itertools import product
 import random
-import string
 
 
 class DFA:
@@ -24,6 +23,9 @@ class DFA:
     AND_TYPE_PATTERN_DFA, OR_TYPE_PATTERN_DFA = "AND", "OR"
 
     EMPTY_STRING = ""
+    LEARNLIB_EXAMPLES_PATH = (
+        "../../../learnlib/examples/src/main/java/de/learnlib/example/DfaEx.txt"
+    )
 
     def __init__(self, Q=0, input_signs=None, δ=None, F=None, type_=NOT_DEFINED):
         if input_signs is None:
@@ -72,7 +74,7 @@ class DFA:
     accepting states 
     """
 
-    def print_complete_description(self):
+    def get_complete_description(self):
         s = ""
         s += str(self.Q) + " " + str(len(self.input_signs))
         if self.type == DFA.CONV_DFA_WITH_COMMON:
@@ -93,24 +95,25 @@ class DFA:
             s += str(q) + " "
         return s
 
-    def route(self, w, q0=0, route_and_return_q=False):
+    def save_complete_description(self, path=None):
+        if path is None:
+            path = DFA.LEARNLIB_EXAMPLES_PATH
+
+        f = open(path, "w")
+        f.write(self.get_complete_description())
+        f.close()
+
+    def route(self, w, q0=0, return_q=False):
         q = q0
         for a in w:
             assert (q, a) in self.δ, "There is no such trasition in automaton!"
             q = self.δ[(q, a)]
-        if route_and_return_q:
+        if return_q:
             return q
 
         if q in self.F:
             return (w, 1)
         return (w, 0)
-
-    def route_and_return_q(self, w, q0=0):
-        q = q0
-        for a in w:
-            assert (q, a) in self.δ, "There is no such trasition in automaton!"
-            q = self.δ[(q, a)]
-        return q
 
     def find_selectors(self):
 

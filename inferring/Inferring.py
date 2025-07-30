@@ -226,9 +226,9 @@ class Inferring:
 
         def get_distinction_word(q1, q2):
             for e in self.E:
-                q1e, q2e = conjecture.route_and_return_q(
-                    w=e, q0=q1
-                ), conjecture.route_and_return_q(w=e, q0=q2)
+                q1e, q2e = conjecture.route(
+                    w=e, q0=q1, return_q=True
+                ), conjecture.route(w=e, q0=q2, return_q=True)
 
                 if (q1e in conjecture.F and q2e not in conjecture.F) or (
                     q1e not in conjecture.F and q2e in conjecture.F
@@ -240,9 +240,9 @@ class Inferring:
         counterexamples = set()
         for q in range(conjecture.Q):
             for l, r in advice_system.pi:
-                q1, q2 = conjecture.route_and_return_q(
-                    w=l, q0=q
-                ), conjecture.route_and_return_q(w=r, q0=q)
+                q1, q2 = conjecture.route(w=l, q0=q, return_q=True), conjecture.route(
+                    w=r, q0=q, return_q=True
+                )
 
                 if q1 != q2:
                     y = get_distinction_word(q1, q2)
