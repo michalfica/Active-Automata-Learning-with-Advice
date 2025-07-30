@@ -2,4 +2,4 @@
 
 We present the empirical evaluation of the active learning algorithm with advice.
 
-This repository includes a custom implementation of L<sup>*</sup> algorithm with an advice system as well as an implementation built on top of a state-of-the-art automata learning library learnlib, which is open source.
+This repository includes a custom implementation of L<sup>*</sup> algorithm with an advice system as well as an implementation built on top of a state-of-the-art automata learning library **learnlib**, which is open source.
