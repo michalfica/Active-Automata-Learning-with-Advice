@@ -4,11 +4,9 @@ de/learnlib/example/Example3.class
 de/learnlib/example/resumable/ResumableExample$Setup.class
 de/learnlib/example/LstarExample_conv_withAS.class
 de/learnlib/example/Example2$BoundedStringQueue.class
-de/learnlib/example/LstarExample_MM$BoundedStringQueue.class
 de/learnlib/example/bbc/Example3.class
 de/learnlib/example/Example3$MySystemStateHandler.class
 de/learnlib/example/LstarExample_idenpotent_withAS$input_data.class
-de/learnlib/example/LstarExample_MM.class
 de/learnlib/example/LstarExample_conv_cl_withAS.class
 de/learnlib/example/sli/Example2.class
 module-info.class
@@ -26,7 +24,6 @@ de/learnlib/example/parallelism/ParallelismExample2.class
 de/learnlib/example/LstarExample1.class
 de/learnlib/example/Example2.class
 de/learnlib/example/TTTExample1_withAS.class
-de/learnlib/example/LstarExample_MM$input_data.class
 de/learnlib/example/Example3$ReuseCapableImpl.class
 de/learnlib/example/aaar/AlternatingBitExampleExplicit.class
 de/learnlib/example/bbc/Example4.class
