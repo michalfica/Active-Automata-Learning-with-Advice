@@ -6,13 +6,13 @@ class Tables:
     def __init__(self):
         pass
 
-    def create_basic_table(self, columns, data):
+    def create_basic_table(self, columns, data, reduction_column=("Reduction", "EQ")):
         columns = pd.MultiIndex.from_tuples(columns)
         df = pd.DataFrame(data, columns=columns)
 
-        avg_eq_red = df[(("Reduction", "EQ"))].mean()
-        max_eq_red = df[(("Reduction", "EQ"))].max()
-        min_eq_red = df[(("Reduction", "EQ"))].min()
+        avg_eq_red = df[(reduction_column)].mean()
+        max_eq_red = df[(reduction_column)].max()
+        min_eq_red = df[(reduction_column)].min()
         empty_row = pd.DataFrame([[""] * df.shape[1]], columns=df.columns)
 
         def set_params(row, params):
@@ -36,7 +36,7 @@ class Tables:
         for row in rows:
             df = pd.concat([df, row], ignore_index=True)
 
-        df[("Reduction", "EQ")] = df[("Reduction", "EQ")].apply(
+        df[reduction_column] = df[reduction_column].apply(
             lambda x: f"{x}%" if isinstance(x, int) else x
         )
 
