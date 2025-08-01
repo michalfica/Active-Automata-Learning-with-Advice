@@ -50,15 +50,10 @@ class Inferring:
         while True:
             iter_nuber += 1
 
-            # print(f"iter nr = {iter_nuber}")
-
             check, x, last_checked = self._closed(start_index=0)
             while check == False:
                 self._extend_S(x)
                 check, x, last_checked = self._closed(start_index=last_checked)
-
-            if self.debug:
-                print(f"closed checked - S = {len(self.S)}, E = {len(self.E)}")
 
             conjecture = self._create_conjecture()
 
@@ -70,13 +65,13 @@ class Inferring:
                 assert self.advice_system is not None, "There must be a some SRS!"
 
                 if self.debug:
-                    print("stat ckecing consistency with srs")
+                    print("checking consistency")
 
-                xs = self._check_consistenticy_with_pi(
+                xs = self._check_consistenticy_with_as(
                     copy.deepcopy(conjecture), copy.deepcopy(self.advice_system)
                 )
                 if self.debug:
-                    print(f"not consistent, caunterexpls: {xs}")
+                    print(f"not consistent, counterexamples: {xs}")
                 while len(xs) > 0:
                     for x in xs:
                         self.counterexamples.append(x)
@@ -90,11 +85,11 @@ class Inferring:
                     conjecture = self._create_conjecture()
                     if self.debug:
                         print(f"new candidate created: {conjecture.Q}")
-                    xs = self._check_consistenticy_with_pi(
+                    xs = self._check_consistenticy_with_as(
                         copy.deepcopy(conjecture), copy.deepcopy(self.advice_system)
                     )
                     if self.debug:
-                        print(f"not consistent, caunterexpls: {xs}")
+                        print(f"counterexamples: {xs}")
 
             check, x = self._query_type2(conjecture)
 
@@ -222,7 +217,7 @@ class Inferring:
             suffixes.append(suffix)
         self._extend_E(suffixes)
 
-    def _check_consistenticy_with_pi(self, conjecture, advice_system):
+    def _check_consistenticy_with_as(self, conjecture, advice_system):
 
         def get_distinction_word(q1, q2):
             for e in self.E:
