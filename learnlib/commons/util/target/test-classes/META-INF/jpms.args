@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.common.util=_
---add-reads
-de.learnlib.common.util=ALL-UNNAMED

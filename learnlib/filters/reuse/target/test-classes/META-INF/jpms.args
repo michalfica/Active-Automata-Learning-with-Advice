@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.filter.reuse=_
---add-reads
-de.learnlib.filter.reuse=ALL-UNNAMED

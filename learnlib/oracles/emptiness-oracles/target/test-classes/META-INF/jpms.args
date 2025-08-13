@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.oracle.emptiness=_
---add-reads
-de.learnlib.oracle.emptiness=ALL-UNNAMED

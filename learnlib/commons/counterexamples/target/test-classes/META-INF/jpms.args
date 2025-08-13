@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.common.counterexample=_
---add-reads
-de.learnlib.common.counterexample=ALL-UNNAMED

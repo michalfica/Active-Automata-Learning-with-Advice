@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.oracle.property=_
---add-reads
-de.learnlib.oracle.property=ALL-UNNAMED

@@ -1,4 +1,0 @@
---patch-module
-de.learnlib.algorithm.dhc=_
---add-reads
-de.learnlib.algorithm.dhc=ALL-UNNAMED
