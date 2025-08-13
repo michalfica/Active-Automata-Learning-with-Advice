@@ -1,0 +1,3 @@
+[submodule "learnlib"]
+	path = learnlib
+	url = https://github.com/LearnLib/learnlib.git
