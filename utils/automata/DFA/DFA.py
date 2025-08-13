@@ -19,8 +19,11 @@ class DFA:
     CONV_DFA = "convDFA"
     CONV_DFA_WITH_COMMON = "convDFAwithCommon"
     INDEMPOTENT = "idempotent"
+    PARTIAL = "partial"
     BITWISE_ADDITION = "bitwise_addition"
     AND_TYPE_PATTERN_DFA, OR_TYPE_PATTERN_DFA = "AND", "OR"
+
+    STATE_NOT_ACCESSIBLE = "-1"
 
     EMPTY_STRING = ""
     LEARNLIB_EXAMPLES_PATH = (
@@ -47,6 +50,7 @@ class DFA:
 
         self.mapping = dict()
         self.selectors = dict()
+        self.pruned = False
 
     def __str__(self):
         return f"DFA amount of states = {self.Q}, transitions = {self.δ}, accept states = {self.F}"
@@ -56,6 +60,8 @@ class DFA:
             from_q = str(q) + ": \n"
             for a in self.input_signs:
                 if (q, a) not in self.δ:
+                    if self.pruned:
+                        continue
                     assert False, f"There is no such ({q}, {a}) trasition in automaton!"
                 from_q += a + " " + str(self.δ[(q, a)]) + "; "
             print(from_q)
@@ -106,6 +112,8 @@ class DFA:
     def route(self, w, q0=0, return_q=False):
         q = q0
         for a in w:
+            if ((q, a) not in self.δ) and self.pruned:
+                return DFA.STATE_NOT_ACCESSIBLE
             assert (q, a) in self.δ, "There is no such trasition in automaton!"
             q = self.δ[(q, a)]
         if return_q:
@@ -132,6 +140,8 @@ class DFA:
             while not Q.empty():
                 q, w = Q.get()
                 for a in self.input_signs:
+                    if self.pruned and (q, a) not in self.δ:
+                        continue
                     addToQueue(self.δ[(q, a)], w + a)
             return selectors
 
@@ -456,3 +466,38 @@ class DFA:
             if self.δ[(q2, letter)] != q2:
                 return False
         return True
+
+    """
+    Deletes almost all edges from transition function besides a random k edges (k in [k1, k2])
+    """
+
+    def prune(self, k1=10, k2=10):
+        edges = []
+        for (q, a), _ in self.δ.items():
+            edges.append((q, a))
+
+        k = random.randint(k1, k2)
+        edges_to_delete = random.sample(population=edges, k=max(1, int(len(edges) - k)))
+        for e in edges_to_delete:
+            self.δ.pop(e, None)
+
+        self.pruned = True
+
+    def create_copy_with_start_sign(self):
+        dfa_ = DFA(Q=self.Q + 2, input_signs=self.input_signs + ["α"])
+        start_state = 1
+        reject_state = dfa_.Q - 1
+
+        dfa_.δ[(0, "α")] = start_state
+        for a in self.input_signs:
+            dfa_.δ[(0, a)] = reject_state
+        for a in dfa_.input_signs:
+            dfa_.δ[(reject_state, a)] = reject_state
+
+        for (q, a), q_nxt in self.δ.items():
+            dfa_.δ[(q + 1, a)] = q_nxt + 1
+        for q in range(self.Q):
+            dfa_.δ[(q + 1, "α")] = reject_state
+        dfa_.F = set([q + 1 for q in self.F])
+        dfa_.type = DFA.PARTIAL
+        return dfa_

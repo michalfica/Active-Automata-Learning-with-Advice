@@ -17,6 +17,7 @@ from utils.advice_systems.SRS import SRS
 from utils.advice_systems.SRSconv import SRSconv
 from utils.advice_systems.SRSconv_with_common import SRSconv_with_common
 from utils.advice_systems.SRSindemp import SRSindemp
+from utils.advice_systems.SRSpartial import SRSpartial
 
 
 class InferringDFA(Inferring):
@@ -40,6 +41,10 @@ class InferringDFA(Inferring):
                 advice_system = SRS(pi=[("4", "2"), ("5", "3")])
             if target.type == DFA.INDEMPOTENT:
                 advice_system = SRSindemp(letter="a")
+            if target.type == DFA.PARTIAL:
+                advice_system = SRSpartial(
+                    alphabet=advice_system.input_signs, partial_dfa=advice_system
+                )
 
         super().__init__(
             target=target,
